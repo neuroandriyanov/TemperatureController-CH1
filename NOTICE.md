@@ -1,5 +1,7 @@
 # Лицензии и происхождение
 
+**Русский** | [English](NOTICE.en.md)
+
 Copyright (c) 2026 Sergey Vasilyevich Andriyanov (NeuroAndriyanov).
 
 | Материалы | Условия |

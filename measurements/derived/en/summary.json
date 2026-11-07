@@ -1,0 +1,7 @@
+{
+  "tc_points": 35,
+  "tc_samples": 884,
+  "direct_current_max_abs_mean_error_ma": 0.018775510204081414,
+  "pt100_max_abs_mean_error_c": 0.5310344827586206,
+  "pt100_zero_repeat_change_c": -0.020335380255077917
+}

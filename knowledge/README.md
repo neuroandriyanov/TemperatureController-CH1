@@ -1,5 +1,7 @@
 # База знаний · Temperature Controller CH1
 
+**Русский** | [English](README.en.md)
+
 Точка входа для нейроинженера: [index.json](index.json). Здесь собраны версии аппаратуры, источники с SHA-256 и отдельные проверяемые факты в [facts.json](facts.json). Формат близок к базе других проектов NeuroAndriyanov; импорт в работающий сайт автоматически не выполнялся.
 
 Порядок чтения: [архитектура](ARCHITECTURE.md) → [протокол](../firmware/docs/PROTOCOL.md) → [аппаратные ограничения](../firmware/docs/HARDWARE.md) → [опыты](../measurements/README.md) → [открытые вопросы](OPEN_QUESTIONS.md).
