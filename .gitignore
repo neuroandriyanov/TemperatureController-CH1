@@ -14,3 +14,4 @@ build/
 Thumbs.db
 desktop.ini
 *.zip
+tmp/

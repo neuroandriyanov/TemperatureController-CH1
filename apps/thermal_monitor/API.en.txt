@@ -1,0 +1,89 @@
+LOCAL CONTROL OF “BENCH · VIDEO AND THERMAL IMAGING”
+Russian original: API.txt.
+
+The application must be running. All operations use the same Engine as the window:
+markers, processing settings and saved results are visible to the user.
+
+COMMAND-LINE CLIENT
+From the application directory apps/thermal_monitor
+(the original manual calls its former location tools\bench_monitor):
+  python ../../env.py control.py state
+  python ../../env.py control.py devices
+  python ../../env.py control.py temperature 0.45 0.58
+  python ../../env.py control.py cursor 0.45 0.58
+  python ../../env.py control.py mark 0.45 0.58 --name T1
+  python ../../env.py control.py frame color C:\path\color.png --full
+  python ../../env.py control.py frame thermal C:\path\thermal.png
+  python ../../env.py control.py save
+  python ../../env.py control.py connect color "CAM  LINK 4K"
+  python ../../env.py control.py settings C:\path\settings-update.json
+  python ../../env.py control.py calibrate C:\path\pairs.json
+  python ../../env.py control.py clear-markers
+
+Coordinates x, y are normalized from 0 to 1 and refer to the displayed thermal frame.
+The origin is the upper-left corner; x increases to the right and y downward.
+Do not use window coordinates including black margins: /api/frame/thermal.png returns
+the actual frame to which coordinates refer.
+
+When reading an image, use the absolute result path for viewing.
+The frame client's --raw option means “without software markers”; color processing
+still follows the settings. For original color, disable enhancement.enabled.
+
+HTTP
+Read the address and Bearer token from .runtime\api.json. They can change at startup.
+Do not print the token in logs. Base address: http://127.0.0.1:18765 (if occupied,
+the next free port up to 18774 is used). No network/proxy is required.
+All /api/* endpoints require Authorization: Bearer <token>. /health contains no camera data.
+
+GET /api/state
+  Streams, frame age, settings, markers, thermal scale and center reading, last_saved.
+GET /api/devices?refresh=1
+  DirectShow device list with name and unique id. For duplicate names, use id.
+GET /api/modes?device=<URL-encoded id or name>
+  Supported modes with a key field.
+GET /api/temperature?x=0.45&y=0.58
+  temperature (number or null), approximate=true, source=palette_estimate,
+  reason (why unavailable), unit, thermal, color (coordinates after alignment), frame_time.
+GET /api/frame/color.png?full=1&annotated=1
+GET /api/frame/thermal.png?annotated=1
+  PNG. For a frame without software labels, use annotated=0. No fresh frame → HTTP 400.
+
+POST /api/connect
+  {"role":"color","device":"CAM  LINK 4K","mode":"3840x2160|25.0|yuyv422"}
+  role: color/thermal. mode can be omitted for automatic selection.
+POST /api/disconnect
+  {"role":"thermal"}
+POST /api/cursor
+  {"x":0.45,"y":0.58}
+POST /api/markers
+  {"x":0.45,"y":0.58,"name":"T1"}
+POST /api/markers/remove
+  {"id":1} removes the selected marker; {} clears all markers and the crosshair.
+POST /api/calibration
+  {"pairs":[{"thermal":[0.1,0.2],"color":[0.2,0.1]}, ...]}
+  From 4 to 30 actual corresponding point pairs. Collinear/duplicate/impossible pairs are rejected.
+  The overlay editor saves 4 thermogram corners the same way. thermal: 0…1;
+  color: −4…5 because a rotated layer can extend beyond the color frame.
+  Temperature markers whose color-frame result falls outside 0…1 are not displayed.
+POST /api/calibration/clear
+  {}
+POST /api/settings
+  {"enhancement":{"enabled":true,"glare":25,"sharpness":18}}
+  Also supported: thermal_unit (C/F), thermal_profile (uti260b/video), output_dir.
+  thermal_rotation: 0/90/180/270 degrees clockwise. Rotates the image,
+  temperature map and marker coordinates. Alignment is recalculated into the new coordinates.
+  The API accepts coordinates relative to the already rotated thermal image.
+POST /api/save
+  {} → {folder,color,thermal,metadata,saved_at} with absolute paths.
+
+SAVING AND VALIDITY
+Each snapshot records both images and marker data in one operation. Temperatures
+always have approximate=true. null means no measurement; do not replace it with zero.
+min/max/center readings are recognized from the camera screen; they are not raw sensor data.
+No scale, an open menu or a stale frame → temperature estimate unavailable.
+hardware_synchronized=false and the frame-arrival time difference are saved in JSON.
+
+CHECKS
+  python ../../env.py -m unittest -v test_core test_alignment test_orientation
+Tests do not open real cameras or change user settings.
+The OCR regression test uses the included fixtures/uti260b_osd.png frame.

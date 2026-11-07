@@ -1,5 +1,7 @@
 # TemperatureController-CH1 — температура под наблюдением
 
+**Русский** | [English](README.en.md)
+
 Репозиторий: [neuroandriyanov/TemperatureController-CH1](https://github.com/neuroandriyanov/TemperatureController-CH1).
 
 **Одноканальный терморегулятор и открытый измерительный стенд.** STM32F030C8T6, восемь типов термопар, ток AC RMS, Modbus RTU, автономный PID и пакетное управление симистором с периодом 2–300 с.

@@ -1,0 +1,291 @@
+[
+  {
+    "id": "mcu",
+    "statement": "Target MCU",
+    "value": "STM32F030C8T6",
+    "unit": null,
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "hardware",
+        "locator": "STM32F030C8T6"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "clock",
+    "statement": "Core clock frequency",
+    "value": 48,
+    "unit": "MHz",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "hardware",
+        "locator": "48 МГц"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tc_types",
+    "statement": "Eight thermocouple types supported",
+    "value": [
+      "B",
+      "E",
+      "J",
+      "K",
+      "N",
+      "R",
+      "S",
+      "T"
+    ],
+    "unit": null,
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "registers",
+        "locator": "TC_TYPE"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "serial",
+    "statement": "Modbus baud rate",
+    "value": 38400,
+    "unit": "baud",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "registers",
+        "locator": "38400"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "parity",
+    "statement": "Modbus parity",
+    "value": "E",
+    "unit": null,
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "registers",
+        "locator": "\"parity\": \"E\""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "address",
+    "statement": "Address set by two HEX switches",
+    "value": "1..247",
+    "unit": null,
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "protocol",
+        "locator": "247"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "current_variant",
+    "statement": "ACS712 sensor variant",
+    "value": 30,
+    "unit": "A",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "registers",
+        "locator": "current_sensor_amperes"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pwm",
+    "statement": "Burst-control period",
+    "value": "2000..300000",
+    "unit": "ms",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "config",
+        "locator": "2000..300000"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "cal_gate",
+    "statement": "Defaults do not confirm calibration",
+    "value": 0,
+    "unit": "flags",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "config",
+        "locator": "CALIBRATION_FLAGS"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "relay",
+    "statement": "Relay has seven functions",
+    "value": 7,
+    "unit": "modes",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "config",
+        "locator": "RELAY_FUNCTION"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "soak",
+    "statement": "Initial warm-up time",
+    "value": 600,
+    "unit": "s",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "config",
+        "locator": "SOAK_SECONDS"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "autonomous",
+    "statement": "Communication timeout 0 permits autonomous operation",
+    "value": 0,
+    "unit": "ms",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "protocol",
+        "locator": "COMM_TIMEOUT_MS"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tc_result",
+    "statement": "Final TC points use the internal cold junction",
+    "value": 35,
+    "unit": "points",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "tc",
+        "locator": "CJ_regulator_mean_C"
+      }
+    ],
+    "notes": "The count is recalculated by measurements/analyze.py. This is a separate firmware 2.2 series."
+  },
+  {
+    "id": "loop_result",
+    "statement": "Five current points checked after changing R17",
+    "value": 5,
+    "unit": "points",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "loop",
+        "locator": "mean_error_ma"
+      }
+    ],
+    "notes": "There is also a repeated 4 mA point. Maximum mean deviation is approximately 0.01878 mA."
+  },
+  {
+    "id": "pid_result",
+    "statement": "Last 300 s of the second experiment",
+    "value": 60.51113243761996,
+    "unit": "degC mean",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "pid_result",
+        "locator": "last300_temperature"
+      }
+    ],
+    "notes": "Range 60.0…61.1 °C, one thermal object and one board."
+  },
+  {
+    "id": "thermal_limit",
+    "statement": "Palette estimates are approximate",
+    "value": true,
+    "unit": null,
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "thermal",
+        "locator": "approximate"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "r17",
+    "statement": "Tested R17 modification",
+    "value": 47,
+    "unit": "kohm",
+    "status": "document_confirmed",
+    "evidence": [
+      {
+        "source_id": "hardware",
+        "locator": "47 кОм"
+      }
+    ],
+    "notes": "Do not automatically change the original BOM or transfer EEPROM calibration to another board."
+  },
+  {
+    "id": "radiator",
+    "statement": "Concealed heatsink temperature",
+    "value": null,
+    "unit": "degC",
+    "status": "unknown",
+    "evidence": [
+      {
+        "source_id": "open",
+        "locator": "закрытого радиатора"
+      }
+    ],
+    "notes": "The outer enclosure was measured."
+  },
+  {
+    "id": "ground",
+    "statement": "USB influence requires a separate investigation",
+    "value": null,
+    "unit": null,
+    "status": "needs_verification",
+    "evidence": [
+      {
+        "source_id": "open",
+        "locator": "паразитного тока"
+      }
+    ],
+    "notes": "Improvement after disconnection was observed; the mechanism was not measured."
+  },
+  {
+    "id": "cold_junction_comparison",
+    "statement": "Comparative compensation series under equal conditions",
+    "value": null,
+    "unit": null,
+    "status": "unknown",
+    "evidence": [
+      {
+        "source_id": "open",
+        "locator": "Сравнение внутреннего"
+      }
+    ],
+    "notes": "Do not substitute separate channel readings or CJ selection in the GUI for this series."
+  }
+]

@@ -1,5 +1,7 @@
 # Локальный формат источников
 
+**Русский** | [English](FORMAT.en.md)
+
 `schema_version: 1.0`, `project_id: temperaturecontroller_ch1`, `bundle_format: local-hashed-sources-1`.
 
 Основные коллекции `sources`, `hardware_versions`, `components`, `connections` повторяют назначение каталога проектов NeuroAndriyanov. Дополнительный файл `facts.json` хранит программные и экспериментальные факты; это расширение локального пакета, а не заявление о совместимости с существующим серверным импортёром.

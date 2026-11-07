@@ -1,0 +1,343 @@
+{
+  "version": 1,
+  "sourceLanguage": "ru",
+  "targetLanguage": "en",
+  "entries": [
+    {
+      "source": "NOTICE.md",
+      "target": "NOTICE.en.md",
+      "sourceSha256": "f630d338fbba63b21fdcf31b8c6675f923c617a5d503196e3099178187612912",
+      "targetSha256": "f80f11371f76fdc7b41409d1f3e341779f54608aadf970e2a4cc017e627b51d9"
+    },
+    {
+      "source": "README.md",
+      "target": "README.en.md",
+      "sourceSha256": "48c5df866f9c76a784f9bc56ede7b24b4ff4b474615fc60d94bdbff96470e15e",
+      "targetSha256": "43d0362d1d295ced5426574cb48d2a32409a05f5cfdb24190f2b715f8e014b4c"
+    },
+    {
+      "source": "apps/calibrator_lb02a/README.md",
+      "target": "apps/calibrator_lb02a/README.en.md",
+      "sourceSha256": "07793f5c1f711dc9618d019687f3955bb18427b0f59cb9e7504f27e2a6e23912",
+      "targetSha256": "3206b3d6e3d0a2e36451932b57a280da67e5ef0fcd648627d8e282fd5c74b17a"
+    },
+    {
+      "source": "apps/controller/README.md",
+      "target": "apps/controller/README.en.md",
+      "sourceSha256": "ac814a22de7cc62741036ebb9783b5f8a5ecabc8e39afa12e03dca4cab1fe524",
+      "targetSha256": "595f4e1a0fe3c96d0c3404ee29f4e94b911fff40e062ede6b690aee82dc26b99"
+    },
+    {
+      "source": "apps/controller/THIRD_PARTY.txt",
+      "target": "apps/controller/THIRD_PARTY.en.txt",
+      "sourceSha256": "0a0e339ee899bd68f783d3a4f5a593a7f8e295c2d747f54186b538e29b77bc04",
+      "targetSha256": "0321bd361f8ccbddc9f8cbdc5e29fe84f7966bd8642a7b8aa5b37a0aa6ff6fbd"
+    },
+    {
+      "source": "apps/controller/ИНСТРУКЦИЯ.txt",
+      "target": "apps/controller/MANUAL.en.txt",
+      "sourceSha256": "c86c9aee5951a5a139dbbd23b1c12b4c476ec7f38cd2e73048720595ea397c5a",
+      "targetSha256": "7ac754f303b4f74127c654da1d5b0bab6ea5d8ec7bfa43af6431ea55f7e33790"
+    },
+    {
+      "source": "apps/stm32_programmer/README.md",
+      "target": "apps/stm32_programmer/README.en.md",
+      "sourceSha256": "7c5f571e847ed03d0b12f4968aa2fd0cb439f2ada04d0b2d08230a74be7a5c80",
+      "targetSha256": "e36d25ddb48a11b1343076922224592476a8e67c8d0c8a32f82c95a668f78ce3"
+    },
+    {
+      "source": "apps/stm32_programmer/ИНСТРУКЦИЯ.txt",
+      "target": "apps/stm32_programmer/MANUAL.en.txt",
+      "sourceSha256": "cf8e4d2af8d4906d3387a3acd3d968ea623199947a89aca986357803f9c9589d",
+      "targetSha256": "88564ec81d290d526f59d5ba4f39ab1c6af672b7d620b7d5adb60c8b6dc8f39e"
+    },
+    {
+      "source": "apps/thermal_monitor/API.txt",
+      "target": "apps/thermal_monitor/API.en.txt",
+      "sourceSha256": "3e46f5aa65033996b62f1e211ad533e0ad196897ef8a6446694a8bab236c48e3",
+      "targetSha256": "79ec31f2a44708727a429e539a8136289e1b5b712c18105b979c5dd03be603ed"
+    },
+    {
+      "source": "apps/thermal_monitor/README.md",
+      "target": "apps/thermal_monitor/README.en.md",
+      "sourceSha256": "cba14e26c06d8673414e7ce73465bd34175a1f18b558b58ab3ab97837f7600c2",
+      "targetSha256": "6a29ab6cded99322c0b9cc8df1f30048f58d9b65a835febb8cc04f6d894b3d5d"
+    },
+    {
+      "source": "apps/thermal_monitor/fixtures/README.md",
+      "target": "apps/thermal_monitor/fixtures/README.en.md",
+      "sourceSha256": "f5fb294e1717bd2b5eb8c0cc1b33f527200c01094ac96d5fbddf77a441d93333",
+      "targetSha256": "8b6b08993b3136bf30e6418f14e074e303553cc4820ef1607a0084baea41aee6"
+    },
+    {
+      "source": "apps/thermal_monitor/ИНСТРУКЦИЯ.txt",
+      "target": "apps/thermal_monitor/MANUAL.en.txt",
+      "sourceSha256": "2a10ae0b09cd49b72416c194dd0445f6dab3ab0b82885272d06a830619b60579",
+      "targetSha256": "7841d7d0cde64e26272de3e914fa070d611787c51e2582ebcc0679fe0499250c"
+    },
+    {
+      "source": "docs/AI_START.md",
+      "target": "docs/AI_START.en.md",
+      "sourceSha256": "dfa607359c17616bebbfe7b3934085ddfde32d21d4f9a99b2a14bb4d210bddd9",
+      "targetSha256": "d5697956e8b5efa80133b9cc5b0a573238aae7d59070ae04fdea59b93dab09a0"
+    },
+    {
+      "source": "docs/QUICKSTART.md",
+      "target": "docs/QUICKSTART.en.md",
+      "sourceSha256": "cb05cdca4ee811df0ac4ab9fed86d13ef848ecf8075bc1b0327f3c2e7dc9e13d",
+      "targetSha256": "3d602cac29a085eae7e2b053cf84864b575e40a21c1da7f6c6b129617772fde5"
+    },
+    {
+      "source": "docs/TRANSLATIONS.md",
+      "target": "docs/TRANSLATIONS.en.md",
+      "sourceSha256": "772001fe5a17e25f41a2da1768dbfb378e65590fc14057cce9f5cc3af7261230",
+      "targetSha256": "cc2bf11ce40ae267d133d3ca5b8ce6085860ebc7cba5dc6792d20e467504fd97"
+    },
+    {
+      "source": "docs/VALIDATION.md",
+      "target": "docs/VALIDATION.en.md",
+      "sourceSha256": "16ffd17078e5c79d22e3531cfd8bfddb04f3baa6ab61fcdaddcc915890586478",
+      "targetSha256": "87d2888f77491ba9642e0252654b42b01e963f20d7a5dd9296dced415989d361"
+    },
+    {
+      "source": "docs/index.html",
+      "target": "docs/index.en.html",
+      "sourceSha256": "a977e1fd2a4c2ca925a96e558051a2e55938f7ffab1b8356d24daf28274cc15c",
+      "targetSha256": "04f2cd5a6c2778f9327001fecafe3576364c7b81c0c12b4471b204ae96173beb"
+    },
+    {
+      "source": "firmware/README.md",
+      "target": "firmware/README.en.md",
+      "sourceSha256": "480dd529c4983da011253d8c31d1313bd97cd22cf6a08b6c7241135a735c04de",
+      "targetSha256": "be7afac5cb5ca68f79c88ee12d2cd79e80ea79e7df755b274a2158f1cb46b373"
+    },
+    {
+      "source": "firmware/THIRD_PARTY.md",
+      "target": "firmware/THIRD_PARTY.en.md",
+      "sourceSha256": "14b0bd1d52b5d1c10c11c4dff41e95e4b9ed5673b223e4989fc429b681fdd27b",
+      "targetSha256": "bdc303bfc603bae292bd267f842e4dc959a80da7f42f7764f83b8bd56dfefe7c"
+    },
+    {
+      "source": "firmware/docs/CALIBRATION.md",
+      "target": "firmware/docs/CALIBRATION.en.md",
+      "sourceSha256": "0b2b7300d2d779021b1c03842f539019131794b746d431960308a8ee64c0c935",
+      "targetSha256": "b72b95a3eff82d5e10c75b336ccc4f49a0d60085b36375181081515ba02582e1"
+    },
+    {
+      "source": "firmware/docs/HARDWARE.md",
+      "target": "firmware/docs/HARDWARE.en.md",
+      "sourceSha256": "56cc10abda323f57bfbab769a4e4df30549181a3090d7da570a41949a5d3c452",
+      "targetSha256": "3551eddde6dfeca35112eae0b33a92c63ead5823199b194cb5dc74e98346e6eb"
+    },
+    {
+      "source": "firmware/docs/PROTOCOL.md",
+      "target": "firmware/docs/PROTOCOL.en.md",
+      "sourceSha256": "c26f7b36993f888ef50fc73b0dfba36a174aaf527c7bdf0b941a707315121ac5",
+      "targetSha256": "7c7a1ff545ea3e4f0b3387c62b5068859297c56297711f6e6617a98e53989559"
+    },
+    {
+      "source": "firmware/docs/REGISTERS.md",
+      "target": "firmware/docs/REGISTERS.en.md",
+      "sourceSha256": "c3adeeb9557208285c6363819e10b0e9f8fa362d8b46c7f3fa5f88ea52f762ae",
+      "targetSha256": "1a4802f387852978bf9f68c5bfc7714c8b6aae3f05c492d08cbcaa214580e624"
+    },
+    {
+      "source": "firmware/docs/VALIDATION.md",
+      "target": "firmware/docs/VALIDATION.en.md",
+      "sourceSha256": "5640e41b53782776a1e3939cfc174520af11b4f5fddee93f5f251790362db7cd",
+      "targetSha256": "c5c682647970f9cb656b08fb5527c27fd9bd9293bec97a23ab9bf6015f230621"
+    },
+    {
+      "source": "hardware/README.md",
+      "target": "hardware/README.en.md",
+      "sourceSha256": "8046a9cf99ab417f094751df086995cbd3b74aec3f368e6e2e13dd4172ee033a",
+      "targetSha256": "2de35ef675fbb372eb279113d96d3bcae158a5a3983d864763a3f2b939d0ce96"
+    },
+    {
+      "source": "hardware/boards/Specification_SSR_P_V01.xlsx",
+      "target": "hardware/boards/Specification_SSR_P_V01.en.xlsx",
+      "sourceSha256": "7e7e95df8f642c3aebc585649231e66cb6c89aba6cd1cd0038ad9514d30d7d66",
+      "targetSha256": "1ea59865291d6393d1f27f52579ade4ff4a37a2983b94b83b15dadca635b3a14"
+    },
+    {
+      "source": "hardware/boards/bom_ssr_cpu_v2_3.xlsx",
+      "target": "hardware/boards/bom_ssr_cpu_v2_3.en.xlsx",
+      "sourceSha256": "c40c746739956206cbed8202c183e86a9cd9c9e7d73e635fcfe345df1cf5607b",
+      "targetSha256": "10111043755a520f7a388bc8b7094fd145bb1c61520043484e468fd0274184b7"
+    },
+    {
+      "source": "hardware/boards/схема_тиристор.pdf",
+      "target": "hardware/LABELS.en.md",
+      "sourceSha256": "4c3381b565356c32916293abeef7fb28d297b175e7f78261285a8699266a5540",
+      "targetSha256": "da84bde68cd9461633e95bb87eabf6743069fd094352740961176f4f9a259d0f"
+    },
+    {
+      "source": "hardware/boards/схема_управления.pdf",
+      "target": "hardware/LABELS.en.md",
+      "sourceSha256": "b6584bd963781e037e70aec116110db2e1ec635c1d93650f6911d60ae4405fa1",
+      "targetSha256": "da84bde68cd9461633e95bb87eabf6743069fd094352740961176f4f9a259d0f"
+    },
+    {
+      "source": "knowledge/ARCHITECTURE.md",
+      "target": "knowledge/ARCHITECTURE.en.md",
+      "sourceSha256": "237405afbc6173f647137a982b639a38d4927d0cd8cbeca2d34736d2a3e55786",
+      "targetSha256": "1ff49d3be62b33022a1bfd8fc4bcc88e64adf53e21e3767a9c0b7cdf519f30e2"
+    },
+    {
+      "source": "knowledge/FORMAT.md",
+      "target": "knowledge/FORMAT.en.md",
+      "sourceSha256": "ff0882926c005b7a8f4c22735111f290ba38935f4c4d55e4a36e501876e7f631",
+      "targetSha256": "9093a5449fd2c3c0c2088cdee51577aff7d2363be7d13734d6c0b6186750e034"
+    },
+    {
+      "source": "knowledge/OPEN_QUESTIONS.md",
+      "target": "knowledge/OPEN_QUESTIONS.en.md",
+      "sourceSha256": "1d8505e5060abce88fe254add6a57c3826af11b8f1080e1037622fb5be57dbd3",
+      "targetSha256": "e2beb049b4a259358262bd52dd277ea1beb00a2cc5c89080513872dd6368e874"
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "knowledge/README.en.md",
+      "sourceSha256": "f12858c76859945c2f2ffdeef7b3f85bb4d26e9a059524f4fc4dd58677b749bd",
+      "targetSha256": "6f365af26ee19740afbcdaa0cd5eb6c62ddaf9bd37e3e5cd8cc5526021a14345"
+    },
+    {
+      "source": "knowledge/facts.json",
+      "target": "knowledge/facts.en.json",
+      "sourceSha256": "ef59fe06a9f6bac4dbe6d07a490dcafdd4cdcbecc9abb80ef292f8337a725d76",
+      "targetSha256": "56a996fe3168c40c449d584308fefe16b67d2ff1b23b028a1ed01a82360e4266"
+    },
+    {
+      "source": "knowledge/index.json",
+      "target": "knowledge/index.en.json",
+      "sourceSha256": "873b3eb6130091931bf92e6048046330ba8e580080f0b3404a74309d38a57658",
+      "targetSha256": "2346758a136fb19f0b41c47489a01b52b463cb98253de3cb2882f7e68fdde94c"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/README.md",
+      "target": "measurements/2026-11-06_pt100_npt_loop/README.en.md",
+      "sourceSha256": "597901fe76a06c19ca39d32846ba5ac9056f8f6f05903d4315e63abceaf4973a",
+      "targetSha256": "68df9de2c160a80e11f0b8c3c1cefe63bc143494d7425551d534f53ee8a85ff4"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.png",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/en/current_loop.png",
+      "sourceSha256": "ca344167f9fdfef2aabf04b2b65956f4660d1713e3a49e53953a0de7419734cd",
+      "targetSha256": "7d631a4cdf638868003c6af97d2d3875754896c2b2f1763ba71b66b470ecf898"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.svg",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/en/current_loop.svg",
+      "sourceSha256": "4891ed47bcb64fcc922d4019fbb95c590ac4f1fea2a9ec2223f654d5a31abe5a",
+      "targetSha256": "b171b697d8d5742ad5a63b12fbb15099efbdeb05e4137de4f9bed27142249dc0"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.png",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/en/pt100_chain.png",
+      "sourceSha256": "e8e32cd066b8b965169c7e1dbf23c1e063397bfc0ebd81ed530be4460c14de18",
+      "targetSha256": "98ab501c82c358a046a60b38a907ab87b33123f06bf2d0a9dd6b946f7f883b62"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.svg",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/en/pt100_chain.svg",
+      "sourceSha256": "f78cc26b337c0ec3d7ec56853ae363f1abcb19a2f4f2477e650cbe046a3281e7",
+      "targetSha256": "d20d7dc0c6b39db018897e96c0c9034ed2cc530848cfecef213929513a4973ce"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/README.md",
+      "target": "measurements/2026-11-06_thermocouple_input/README.en.md",
+      "sourceSha256": "726c009b7d2e5cba84732ae607cf0b75d310d4e9c4a6388fbff0d864e84612cd",
+      "targetSha256": "7fc97b259ef3dd2ecd2a4ae6abf7d83298fdcb5857081ce94fe720000609d6ef"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.png",
+      "target": "measurements/2026-11-06_thermocouple_input/plots/en/thermocouples.png",
+      "sourceSha256": "e7056e09a04d28fec1f2ab32f4d87b023f84f057c3de8a0bfd7ab7a88e608c01",
+      "targetSha256": "b79f930cd02ff73e24506d092d1e812c08c97ed21d649f5a43b5174232e175c9"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.svg",
+      "target": "measurements/2026-11-06_thermocouple_input/plots/en/thermocouples.svg",
+      "sourceSha256": "18c6d4357ea4602c12983e00e8d6d7a1a040db217dcb41529ba46411608bdf40",
+      "targetSha256": "eb09506eddf1009199fff932fc27afec0fd0ec4a5cc782a25c62b48bce19c881"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/README.md",
+      "target": "measurements/2026-11-07_heater_60c/README.en.md",
+      "sourceSha256": "50a575bec61c9d15bb0244e2e70450f199d2f887fc9bfbb2d45db36cfa94cd37",
+      "targetSha256": "1e2ea400c12c0d20c7bcd22605ef9c672dbc994564ed9209857f6efce760298d"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_01.png",
+      "sourceSha256": "2e739c5112638387db3b0c42dcbeffef5caa7b652d7cceb9f232ce15d6793866",
+      "targetSha256": "f1b6ee42236cd9a9420e183c9ac09cf27a462c8966070d7fd81025b114ff0431"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_01.svg",
+      "sourceSha256": "a832f3f03ad3c2f95857cb2e6229cbf8c3695344b63454b31a7530971c65b704",
+      "targetSha256": "1c51c44ac5fec5fb5159fbcf03f8ae13b465ad07bf9b032bf635357d3ab999c8"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_01_hold.png",
+      "sourceSha256": "3dab325f7a86b4e912d5ad1896538142653f02013fd7a213e8c2e28926bfbe34",
+      "targetSha256": "450c0a172cf1d7a48f8dbfef4b3ad0513436afa0e5a69c9c7ee472366575d0ee"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_01_hold.svg",
+      "sourceSha256": "5c0d3a1742dac6d7710ceb747c660ce6985898fb2855204ac93d14fb7f78adb1",
+      "targetSha256": "33404faada98098e6055c4a9fdd1bfc6ee90fe7ccbcdc1e69524d0f831efd992"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_02.png",
+      "sourceSha256": "3906e600166b584d1c7c2b4aafe1c2af55a1d6d787e6a8124a8646c7eafb1228",
+      "targetSha256": "7a4cceee12a6579b8e7afa08ea5e0551273ac4d4c33d3bc55a140a9fea767232"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_02.svg",
+      "sourceSha256": "95737c3481e4fbf87e2ec405b98e8a42d08062f3430853b9563c4ef131831b1d",
+      "targetSha256": "0576b371b847b9559b1ec36dbca5a4c1c0174ecce2677ddec6ca649051b458cd"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_02_hold.png",
+      "sourceSha256": "0ac3da99156bf7bd15abc0fbc4bfddf259d47e91c080791e2363c2f56f2bf5fc",
+      "targetSha256": "1291a6885135bd0457a023ccb48c58a13c79b40e05038f3419ad441bf93de585"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/en/pid60_hold5_02_hold.svg",
+      "sourceSha256": "33d0f45e1f59dc9c1287d1736e8eee099192339cc1e923c48b8447f07638384d",
+      "targetSha256": "bda03560e462a4f9f8c1cab606146a9489d2e1f38b73e73e558c21ba51a8b5a6"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/scripts/plot_pid_runs.py",
+      "target": "measurements/2026-11-07_heater_60c/scripts/plot_pid_runs.en.py",
+      "sourceSha256": "af923324232ac5c1dc9b9f0f0e5f5a5a8634a96cf69e2ad6a4521db074607e99",
+      "targetSha256": "cfdc59a87a4f8ee1ddfe839d43caf7e3f2538125869caffca9719a8a21627b7d"
+    },
+    {
+      "source": "measurements/PROVENANCE.md",
+      "target": "measurements/PROVENANCE.en.md",
+      "sourceSha256": "ba1c032ce92988f9fe2fd3d5e6f25ed65bf8019d6426b38d50e11ab124324aec",
+      "targetSha256": "e96197b3a8af1844de2678cd6e6807a887070107ea2f0aec9f6622049c5c8ee5"
+    },
+    {
+      "source": "measurements/README.md",
+      "target": "measurements/README.en.md",
+      "sourceSha256": "cff4a9669f0c7dab64e3f53d77b699ad1c9bae85af7ccfad3e6be6a333608b4e",
+      "targetSha256": "e0054731fb342dc5e253d3821fe5921ad53ca3d0843de6aa629d83fd769b4987"
+    },
+    {
+      "source": "measurements/analyze.py",
+      "target": "measurements/analyze.en.py",
+      "sourceSha256": "b9598046c804f33b833616c7ba52afd0644a9dc91805e02ef67e51529d85da0b",
+      "targetSha256": "955e9482c6206c9cb0c900d1cf97b586b647b4aebd800fcc33e915cdba034e0c"
+    }
+  ]
+}
