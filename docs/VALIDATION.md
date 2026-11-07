@@ -34,6 +34,8 @@ python env.py -m platformio run --project-dir apps/calibrator_lb02a/bridge -e di
 python scripts/knowledge.py --check
 ```
 
-Linux native-тесты с санитайзерами и ARM-сборка включены в `.github/workflows/ci.yml`, но удалённый GitHub CI в этой подготовке не запускался. Версии действий сверены по первичной документации [actions/checkout](https://github.com/actions/checkout) и [actions/setup-python](https://github.com/actions/setup-python). Сам workflow ничего не прошивает и не публикует.
+После публикации проверки запускаются на чистых машинах GitHub Actions: Windows — Python-тесты, каталог знаний и сборка ESP32-S3; Linux — ARM-сборка, 54 590 проверок C-ядра с санитайзерами и карта регистров. [Первый запуск опубликованного комплекта](https://github.com/neuroandriyanov/TemperatureController-CH1/actions/runs/42316933181), [актуальные результаты](https://github.com/neuroandriyanov/TemperatureController-CH1/actions/workflows/ci.yml). Сам workflow ничего не прошивает и не публикует.
+
+Отдельно проверен обычный Git checkout: контрольные суммы всех 441 файла из манифеста совпали, каталог знаний прошёл проверку. Файлы измерений и исходников опубликованы вместе с манифестом; база знаний ссылается на конкретный коммит исходного комплекта.
 
 Программная проверка не означает завершения всех аппаратных испытаний. Список выполненного на реальном стенде и открытых вопросов — [прошивка](../firmware/docs/VALIDATION.md), [опыты](../measurements/README.md), [база знаний](../knowledge/OPEN_QUESTIONS.md).
