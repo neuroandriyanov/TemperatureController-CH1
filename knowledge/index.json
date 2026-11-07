@@ -236,12 +236,12 @@
       "title": "Проверка публикационного комплекта",
       "kind": "build_report",
       "repository": "neuroandriyanov/TemperatureController-CH1",
-      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "commit": "4681795474f7dab075687ae774e2b3d371df7a2b",
       "path": "docs/VALIDATION.md",
-      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/docs/VALIDATION.md",
-      "sha256": "770b6b4a27c5d3828784573aa0f0317241981d8ab677f82144286b0bd7cd4eee",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/4681795474f7dab075687ae774e2b3d371df7a2b/docs/VALIDATION.md",
+      "sha256": "16ffd17078e5c79d22e3531cfd8bfddb04f3baa6ab61fcdaddcc915890586478",
       "accessed_at": "2026-11-07",
-      "notes": "Проверенная версия источника в исходном публикационном коммите; локальная копия контролируется SHA-256."
+      "notes": "Отчёт дополнен ссылками на GitHub Actions и результатом проверки Git checkout. Измерения и алгоритмы не изменены."
     },
     {
       "id": "open",
