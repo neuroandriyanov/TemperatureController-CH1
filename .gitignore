@@ -1,0 +1,16 @@
+.venv/
+.pio/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.runtime/
+settings.json
+captures/
+output/
+build/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.zip

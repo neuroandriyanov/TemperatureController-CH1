@@ -1,0 +1,5 @@
+# Python 3.12–3.15; Windows x64 is the tested capture platform.
+-r apps/controller/requirements.txt
+-r apps/thermal_monitor/requirements.txt
+-r apps/stm32_programmer/requirements.txt
+-r apps/calibrator_lb02a/requirements.txt

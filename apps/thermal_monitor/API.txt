@@ -1,0 +1,87 @@
+ЛОКАЛЬНОЕ УПРАВЛЕНИЕ «СТЕНД · ВИДЕО И ТЕПЛО»
+
+Программа должна быть запущена. Все операции используют тот же Engine, что и окно:
+отметки, настройка обработки и сохранённые результаты видны пользователю.
+
+КОМАНДНЫЙ КЛИЕНТ
+Из каталога tools\bench_monitor:
+  python ../../env.py control.py state
+  python ../../env.py control.py devices
+  python ../../env.py control.py temperature 0.45 0.58
+  python ../../env.py control.py cursor 0.45 0.58
+  python ../../env.py control.py mark 0.45 0.58 --name T1
+  python ../../env.py control.py frame color C:\path\color.png --full
+  python ../../env.py control.py frame thermal C:\path\thermal.png
+  python ../../env.py control.py save
+  python ../../env.py control.py connect color "CAM  LINK 4K"
+  python ../../env.py control.py settings C:\path\settings-update.json
+  python ../../env.py control.py calibrate C:\path\pairs.json
+  python ../../env.py control.py clear-markers
+
+Координаты x, y нормированы от 0 до 1 и относятся к отображаемому тепловому кадру.
+Начало координат — верхний левый угол. x растёт вправо, y вниз.
+Не используйте координаты окна с чёрными полями: /api/frame/thermal.png возвращает
+именно тот кадр, к которому относятся координаты.
+
+При чтении изображения используйте абсолютный путь результата для просмотра.
+Параметр --raw клиента frame означает «без программных отметок»; обработка цвета
+по-прежнему соответствует настройкам. Для исходного цвета отключите enhancement.enabled.
+
+HTTP
+Адрес и Bearer-токен читаются из .runtime\api.json. Они могут измениться при запуске.
+Не печатайте токен в логах. Базовый адрес: http://127.0.0.1:18765 (если порт занят,
+используется следующий свободный до 18774). Сеть/прокси не требуются.
+Все /api/* требуют Authorization: Bearer <token>. /health не содержит данных камер.
+
+GET /api/state
+  Потоки, возраст кадров, настройки, точки, шкала и центр тепловизора, last_saved.
+GET /api/devices?refresh=1
+  Список DirectShow устройств с name и уникальным id. Для одинаковых имён используйте id.
+GET /api/modes?device=<URL-encoded id или name>
+  Список поддерживаемых режимов с ключом key.
+GET /api/temperature?x=0.45&y=0.58
+  temperature (число или null), approximate=true, source=palette_estimate,
+  reason (почему недоступна), unit, thermal, color (координаты после совмещения), frame_time.
+GET /api/frame/color.png?full=1&annotated=1
+GET /api/frame/thermal.png?annotated=1
+  PNG. Для кадра без программных подписей annotated=0. Нет свежего кадра → HTTP 400.
+
+POST /api/connect
+  {"role":"color","device":"CAM  LINK 4K","mode":"3840x2160|25.0|yuyv422"}
+  role: color/thermal. mode можно пропустить для автоматического выбора.
+POST /api/disconnect
+  {"role":"thermal"}
+POST /api/cursor
+  {"x":0.45,"y":0.58}
+POST /api/markers
+  {"x":0.45,"y":0.58,"name":"T1"}
+POST /api/markers/remove
+  {"id":1} — удалить выбранную; {} — очистить все точки и крестик.
+POST /api/calibration
+  {"pairs":[{"thermal":[0.1,0.2],"color":[0.2,0.1]}, ...]}
+  От 4 до 30 реальных общих пар. Коллинеарные/повторяющиеся/невозможные пары отклоняются.
+  Редактор наложения сохраняет 4 угла термограммы тем же способом. thermal: 0…1;
+  color: −4…5, поскольку повёрнутый слой может выходить за границы цветного кадра.
+  Температурные отметки с результатом вне 0…1 на цветном кадре не отображаются.
+POST /api/calibration/clear
+  {}
+POST /api/settings
+  {"enhancement":{"enabled":true,"glare":25,"sharpness":18}}
+  Также поддержаны thermal_unit (C/F), thermal_profile (uti260b/video), output_dir.
+  thermal_rotation: 0/90/180/270 градусов по часовой стрелке. Поворачивает изображение,
+  карту температур и координаты отметок. Совмещение пересчитывается в новые координаты.
+  API принимает координаты относительно уже повёрнутого теплового изображения.
+POST /api/save
+  {} → {folder,color,thermal,metadata,saved_at} с абсолютными путями.
+
+СОХРАНЕНИЕ И ДОСТОВЕРНОСТЬ
+Каждый снимок фиксирует обе картинки и данные точек одной операцией. Температуры
+всегда имеют approximate=true. null — это отсутствие измерения; не заменяйте его нулём.
+Показания min/max/center распознаны с экрана камеры; это не сырые данные датчика.
+Нет шкалы, открыто меню или кадр устарел → оценка температуры недоступна.
+Флаг hardware_synchronized=false и разница времён поступления кадров сохраняются в JSON.
+
+ПРОВЕРКИ
+  python ../../env.py -m unittest -v test_core test_alignment test_orientation
+Тесты не открывают реальные камеры и не меняют пользовательские настройки.
+Регрессионный тест OCR использует включённый кадр fixtures/uti260b_osd.png.

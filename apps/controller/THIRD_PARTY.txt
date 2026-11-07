@@ -1,0 +1,3 @@
+Авторский код MIT (../../LICENSE).
+pyserial 3.5 — BSD: https://github.com/pyserial/pyserial/blob/v3.5/LICENSE.txt
+PySide6/Qt устанавливаются отдельно, их лицензии и уведомления сохранены в пакетах. См. ../../NOTICE.md.

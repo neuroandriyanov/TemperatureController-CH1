@@ -1,0 +1,730 @@
+{
+  "method": "Metadata and workstation identifiers removed; numeric/null values compared by JSON path; image pixels preserved.",
+  "files": [
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/extra_B_500_avg16_samples.json",
+      "source_sha256": "ad9469febdcd8649c61c8ef38fc3f9a648b889fa34d51e1e00af921f260b7524",
+      "public_sha256": "ba71aa2dd96c709dad19ec05cc38f7bffdf4884d2ef7c17b09ff0048d68ad29c"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v2_K_0_samples.json",
+      "source_sha256": "7f02ee3fa78ec20c0a32d7dd73f66ababe8b115e2bfaf50c065d33118bd8c639",
+      "public_sha256": "82a0923acf63712cfc44a34e6a31796493f5b9aa7c389a5d353b8c8271d88ce4"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v2_K_100_samples.json",
+      "source_sha256": "a3b249b09a9b8900273a7af2edc7c35ddc8fd5c725daa5198bf0ff3f617f0ab8",
+      "public_sha256": "21b5a92645b15afc8721347a33ccea59593e0cd93f2831e747ab0ec2603190fd"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v2_K_1100_samples.json",
+      "source_sha256": "363dba4c2434aa79e3753dc2772ab12974ab232c7f936d6de2199942e95a877f",
+      "public_sha256": "b54ba7d2b9f25831d2f73ac8057eb41057c0bf65947735a5a94458b97c3c33be"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v2_K_300_samples.json",
+      "source_sha256": "af6fbbb96a53bab3497173d5e7401fac3823c28071550f5c53c78c421f923a92",
+      "public_sha256": "d0fa0f4dc03302a1889468fec7ff4d90d09ae4d394444ad97416e5117c139845"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v2_K_700_samples.json",
+      "source_sha256": "5a4b88b903754e8a92041a982ca20e1c2c7eabe333a46f1b108246b97b811d52",
+      "public_sha256": "d0f6b38144995ecbc8c3e51f81cb2b78d66e28a1a1cfd50b62849288cd72be0f"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_E_0_samples.json",
+      "source_sha256": "f3501e2390e47bc2d1ffe0e304b8f4a75976d2375caaa08322fed14bd8303392",
+      "public_sha256": "2a886b00b14550fcedfaad38e95f814faa94f20c41932e0749606afc75d8e799"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_E_100_samples.json",
+      "source_sha256": "6580037c43c1c2fd261c3feed761e8213e674f0c378713346b196d035d0fd67e",
+      "public_sha256": "3fea1f024c4fb1b19bd8ecc7758b5d4440647e1b2acfb819985c6d50e36adfc3"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_E_300_samples.json",
+      "source_sha256": "add3286ef42c979c02e8b2759961dab744b320dd6d6c5f0f066031a72cf13ad1",
+      "public_sha256": "5a1bcf81b0fd8d22be793a4678a25f5afd6787ade8ecf030fb498223e570421c"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_E_700_samples.json",
+      "source_sha256": "2d507ee0adea70c1063eb8f6decbfc0126ce0c15a632720701e3267ef36dcc23",
+      "public_sha256": "917af7809be510481882468fc111a3228cebcbd02aa130b6ff9ed0a53ceef77d"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_J_0_samples.json",
+      "source_sha256": "acc6adf9742cec05616fe08cac1b388b28cef931cc6ac61de51d451ae682d775",
+      "public_sha256": "f891f2811d9792b7da89c137ea629363d8404c084adf0e80d914881f795b1927"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_J_100_samples.json",
+      "source_sha256": "6c5f3abdcb28ae13c27b327b9137d6690006114a7835e6f9f5b896dcdc836fa1",
+      "public_sha256": "b5de9eea7d2b184305b5f9e04c25e10d1033990cf5826931dfb133252023182d"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_J_300_samples.json",
+      "source_sha256": "2f874180715b35d137e9af10e06d9719def39de7fc02e60221ca3d04025b42ca",
+      "public_sha256": "c26e7de7b05ed78b1bcb3a18ef5897f310e6024451e0a1899590fc38b3abff25"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_J_700_samples.json",
+      "source_sha256": "26918e5ee6b0f7c5fde6a200ec172d575de1afb4c485b03a830fe31787b2ae36",
+      "public_sha256": "d372177aaa182fc0f7daa2a21c655b28cc50011e1b6afc9e400cf7d8a0a46516"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_N_0_samples.json",
+      "source_sha256": "d963c761a38c4ca60ae9d9609664b0e90fe4e3a7256b7b5aa815c0ce721deb8b",
+      "public_sha256": "a78c06d93bec22fa7ada079d01f8c0a8083d755c1818733b24178197370e490a"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_N_100_samples.json",
+      "source_sha256": "1a76c2ced9c073ad34235eea257d8c0c760d8bb39171876ef57d1ab2f3bf6e5c",
+      "public_sha256": "0d6609c6823b8c9ec99dcda02c41dae07c32d079343f0f7d28417997697021b5"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_N_1100_samples.json",
+      "source_sha256": "913af77fa3a323cb16b26246ae40b1da90ab58857dff4a0e60a8450c72bc8608",
+      "public_sha256": "3c5daa285ddd9bfc30c7aef4501a2483d4038fc81d8098efba2a32dbb88ddaff"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_N_300_samples.json",
+      "source_sha256": "b712e9fc5ae0d0ba1e2779540a66f4b347a11b54fb782103bea90c1ae4eed013",
+      "public_sha256": "68045da0be2e6d20c87262e71e9afc302bd852b8b83b88d67200e35347a63eff"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v3_N_700_samples.json",
+      "source_sha256": "4a12b56128957096241ba901cfa4f72a19eea698e4a641f99b7cbf2895c36aed",
+      "public_sha256": "9f3aa3facb422d25e8ce47fe637163bd7391af784c8341eb7917b6c52e7bc7e3"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_R_100_samples.json",
+      "source_sha256": "b282ffcbe0a392526db8c21f9d6cf22dde9e149b3b42d922f92412e4d6732923",
+      "public_sha256": "feaf3869f5c983be4efe75c958f54b20cc6bfad2027a533115777675865d41f3"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_R_1500_samples.json",
+      "source_sha256": "3318f7101b443598ed026598a2d85712103de1ab858905a15624fbe8ab98301c",
+      "public_sha256": "1989e97258378dc33a2d9c0175a075db622f67834e2fbcdd1a0d33d618e800b0"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_R_400_samples.json",
+      "source_sha256": "8e161db0522baf8aa74b61f3e9c12016822c37b1928fbdf3d15c15d5f016038e",
+      "public_sha256": "72453be9ce40c51fab37d287ee801b842925be5734cd7f41fe23968457785b69"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_R_900_samples.json",
+      "source_sha256": "6365862731323c1c8369769f88ba10d79b27f5b12c24916f57c2d9f4f24ede01",
+      "public_sha256": "07e9ff017efd8cafa63ebcc68eb5aadb74e7b94fa02331bb2f0131bd76a6e1e7"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_S_100_samples.json",
+      "source_sha256": "0b312dc5d2cdc6e0ed7cc94668a644541768824ead7625d9e46e274632456ed4",
+      "public_sha256": "6c410390893796ee5754140e6ac1bb8d4e7e556b465cb4232bd267aa5fb85b64"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_S_1500_samples.json",
+      "source_sha256": "2a21d93348c799f7be4fc86d8e8c08236c6daf181b1e7b7f43920db52fbb66e6",
+      "public_sha256": "592cc820fdd405321b845d44cf3cc0ead88d660f6a4722d26c4b5868e87b3639"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_S_400_samples.json",
+      "source_sha256": "35f32239ba29c9303438cbb2f5a278a983694063d965207d32033a1b2d14e1c0",
+      "public_sha256": "bb25f64518cb53e6c269a62cfdae0c37228c1c97f31f01657c23859ca9b746bc"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_S_900_samples.json",
+      "source_sha256": "caeae36e518b5a11316fbc0208868a123640724a4c4665e349a057c913677f23",
+      "public_sha256": "a9ef096f853ab9df43025255e1bf00b281957d5ad2b17b5172fae1bf8c9645fa"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_T_0_samples.json",
+      "source_sha256": "5a1fa877d81e39b82fbd38a72858ed62dbcb03a71a15a15791c09573d78436b2",
+      "public_sha256": "2e76010427f864502494e0386d42a284407ec381707bfcbe182a0ae6b763aaee"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_T_100_samples.json",
+      "source_sha256": "9dddee7ab369afa06001de7a49f78d11d5df48d49ed6c0f6bcb95fb05831142e",
+      "public_sha256": "343edb14dd0936670614a367cfd9439b6f761cdf07c2b58b54cbfa5be627b31b"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_T_200_samples.json",
+      "source_sha256": "d4e9c77acdd5104af89cd0052ffdd9c64115fa1fc79be35a5065a5252e8c3126",
+      "public_sha256": "477af07dc36cc2b66ab34fec01b402e181cbea0a13614e0a725eb4df0e6fbecb"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_T_350_samples.json",
+      "source_sha256": "bad6acc3d2d7f3ef4e73c390e5097efc3096e1634a5c0ed4488e5d0c954b31e4",
+      "public_sha256": "749c5645a29dda942c61e5f137c15862ca1db5630d79891da0312578916a9993"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v4_T_50_samples.json",
+      "source_sha256": "ccc275b49aaf0440080e1cc64ec051863cd67f580b538f04c2a0b1ceed7836d2",
+      "public_sha256": "7160847f6af2ebe31b52ca21583cffdd171037e0d49eddc83783c3e367a069de"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v6_B_1000_samples.json",
+      "source_sha256": "efabf8faa20067a31f331db382ec4477fbedc48de4fa61ba8213e60f399db099",
+      "public_sha256": "2973fe6f9ccd7632bf0b7278dcc3b83cacb047e72dce977cd388065af2de5bb5"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v6_B_1600_samples.json",
+      "source_sha256": "36602b27a7d9b438b577144a82cdb397e7c7c42636a92d1dee4af167134ce384",
+      "public_sha256": "992cffe1a0b2b537b568726a498fa5e33350f70529edc6c39bacd4bb5959aca9"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v6_B_500_samples.json",
+      "source_sha256": "253a149131e9318f14377bceccc07e29c1e55d0b650728813cd77064976c3117",
+      "public_sha256": "293e73900c3677fa86b7759810b77ac3c430e81ef3aaa6b7cab7f0efe1df196d"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/isolated_v6_B_600_samples.json",
+      "source_sha256": "9930616f312b60d355bdf7d010d94a5887d6967a23203fdd79c6bb17223ff79d",
+      "public_sha256": "167b5b9df299eb10cfaef2a973bdd6a425c300d29582bbac796e5db1f7d4f892"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/mv_5_samples.json",
+      "source_sha256": "dace4edced190c91995370150aa01ee26ccc1d432fa67f9c88e696b06b11823e",
+      "public_sha256": "2eb9562de832eb1b4c0af7bba89aeb29d8e4d27a80bf8bd1b2e2dfb83088ad4b"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/repeat_K_100_samples.json",
+      "source_sha256": "ca628f93792d93f71ccf4e1efb17ee931c16d9d9ae48d105fb4ae49e859627d6",
+      "public_sha256": "b3b6374bdf10ccd8e6c800eef011d19089b88db799d34d8ba601ac9aa19d8e26"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/repeat_zero_samples.json",
+      "source_sha256": "542730b13a6ea72342d0a5adeb9a59df4d46dd5e7783dec6496629d722ba0126",
+      "public_sha256": "ead579f222e246395c9cfcaf2795472d508e16e75bde0ebc4decc188097fdd3a"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/short_at_terminals_samples.json",
+      "source_sha256": "3169438963dddee17c608293118eb725227e653b3e371701760c2ba9b58c3c8b",
+      "public_sha256": "770d1e21bce0cd75ceb71a70aa8d9bb5a0bf87fea37cf2ece33dc50fb3f87c20"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/tc_K_100_no_usb13_samples.json",
+      "source_sha256": "eeaf01f0d150b32aaebed4cb7012d438527a57c4f55fe0f996bf0e706be775cd",
+      "public_sha256": "426c0987b47500b0bc8413c24c24f45227e3ceb3cd1c81cbba87a0baaefe9a93"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/tc_K_100_samples.json",
+      "source_sha256": "71e35ad10def7706d8943612be264d9e9db8ab4622013ca882d955e5930aafdb",
+      "public_sha256": "7c89b9bc82d71ff981141024de114e42f046adc81b125f4477c17f883213037c"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/raw/zero_after_contact_samples.json",
+      "source_sha256": "216586aec7c9f09bf6039979a9c7c14e383dfa3dad39e8462069fc0e5956968c",
+      "public_sha256": "30a83ad91faa0470e103a9a44c4193dcee3b8ed4c11a32ac9b7118b4159b7e33"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/temperature_points.json",
+      "source_sha256": "70370b923d929c1798738244477ceb627e8c57fc60a4a3cdabee98352bf3cf63",
+      "public_sha256": "38421cf8a03cec7e35cfe0744b0065d8cfe6cc01cbd0f2cf8a1a228a8fbc62f3"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/validation.json",
+      "source_sha256": "b459e46894cb39ac1bf4333937cb58132f585fdd98f1fab318449db28357540a",
+      "public_sha256": "6ff67232e5b2eef0b57992f30d04626e914909a9fe408d66e551157b130f4c17"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/diagnostic_summary.json",
+      "source_sha256": "f7832647d0ff4bcd6e4f813f369f9ace64b72ce962a69d4407c85d3f48869a13",
+      "public_sha256": "2795e40b84fa46ea56cb619b34d99359ba409b81f370a2585f8ffd4d852d3394"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/setup/color.png",
+      "source_sha256": "58e6de9948d52df9f4098af1f0c4b7c3d7dccf54b62ba5568cef7a8871cef222",
+      "public_sha256": "58e6de9948d52df9f4098af1f0c4b7c3d7dccf54b62ba5568cef7a8871cef222"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/setup/measurements.json",
+      "source_sha256": "7935b30c565675650ca2ae61049bd9b79569d02c0e378b0dd62884035dc32817",
+      "public_sha256": "1766ed037d94dbc9c2499e59c6a7ed4ca03149978c813bfa3e091d601a4675c6"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/setup/thermal.png",
+      "source_sha256": "2300e760500e7896de16f848d00677ca471f9e16f476fccb4f397fa82299327c",
+      "public_sha256": "2300e760500e7896de16f848d00677ca471f9e16f476fccb4f397fa82299327c"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/isolated_measurement/color.png",
+      "source_sha256": "653637d68b34a1162aa605e2bddebdbf762eb2379a5fb330516b9b2d6d8b39c8",
+      "public_sha256": "653637d68b34a1162aa605e2bddebdbf762eb2379a5fb330516b9b2d6d8b39c8"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/isolated_measurement/measurements.json",
+      "source_sha256": "5ac3bd8da095965566ad17d18627b598ac44c8bb76644ee67fc6d0f508f3417e",
+      "public_sha256": "176b951a1398ef5730f096af1e6fd2c96c7fed875f150daf96e52ed35bddf8cb"
+    },
+    {
+      "path": "measurements/2026-11-06_thermocouple_input/photos/isolated_measurement/thermal.png",
+      "source_sha256": "bd47bb88683b92ff7ccf94dd52e123a212da97bca8b6725b39b22f2e9aa37ad2",
+      "public_sha256": "bd47bb88683b92ff7ccf94dd52e123a212da97bca8b6725b39b22f2e9aa37ad2"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_before_samples.json",
+      "source_sha256": "623f9083a4c0a509743e131646051f3797ae2e9f8d17d2b4e3b07545621b83b1",
+      "public_sha256": "d6d1a105923ba10be9cd8244deda2ce9b38be0f2f69f02c9f5c37f864107ce3b"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma12_retry_samples.json",
+      "source_sha256": "5ae96787adf2399810612d9cb5d47df8297f541b6962ccc57872af047a78ecd9",
+      "public_sha256": "d451cb7c7b38a72bacfbfffe455ad5915cfd96af0791d0a3d0ea180a81945c1f"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma16_samples.json",
+      "source_sha256": "b29214f62792f514ae34715c587b0afc819412befcbd5f28020f669d1d043f4b",
+      "public_sha256": "f6b86811cf80b63ab47e08abeb22f4f96887a54cb3631a40c4c2b1c9dce8164f"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma20_samples.json",
+      "source_sha256": "aecdc0e38b2d97b11a48586b4f3a478898a068d0238643f9b0ad8c71e9d392c1",
+      "public_sha256": "6edc917a7325fb458b66cfad478524ce2a3ed9f6b83208e824fc40666a4797ca"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma4_first_samples.json",
+      "source_sha256": "32c89c59731a9cb9a760ae4783b91b3ce863eb0b6c664185e5247c12a0c43ffa",
+      "public_sha256": "134cff2e8b409edead8a07db8297a98cd4340bacbd954d5176a31043840882d1"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma4_return_samples.json",
+      "source_sha256": "58c5917d7bc5d1bf833431f82bab30b87763dc0ec128566175f83c5e55d9ea79",
+      "public_sha256": "1a8c672190573f7d93e451682b234f6bcfd3c622bea66dd3c5385b4c2d57701f"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/direct_ma8_samples.json",
+      "source_sha256": "885cebe156e9239cefd8db5439788063e75fd5dfdc16c5b2c1a1a639d1e2e11b",
+      "public_sha256": "b90281b498ca4f8082585d13a573d2a19bc3c6df4cd4a442c568d503e5feb81c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_boot_ma4_samples.json",
+      "source_sha256": "2e8e17f05dee545fa25e8dde743f2461ae78ec16e624329471d92cb573efb264",
+      "public_sha256": "f33a3e440bdda5bf6c2028d09e31f02cd408c87cde2901fafba4c95d8bd914dd"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma12_post_samples.json",
+      "source_sha256": "62bdc11dfa67e5a3f176c3108b877eb3b7f22d360d7dd21dd233021259516981",
+      "public_sha256": "dbdf35d5701e359defb90375cccf9f4331540ca090dbcd622cb0de6c51131627"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma12_pre_samples.json",
+      "source_sha256": "43079cb2f2b67be0578ba97a9f32b6427caf2c8d2e99607e58998dd55217ed41",
+      "public_sha256": "36b82f6a5da56553f324d39419665611d3e52295a96a54c28d8244773bfd72a9"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma16_post_samples.json",
+      "source_sha256": "7bb9e1a0348ee6b05997537f07b605b12180d5ad8cb1564a894ae0ebf4833ceb",
+      "public_sha256": "8da151119f27eccf227020753991bc91a8c22e9be52f62f1eb4af9aedb24e366"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma16_pre_samples.json",
+      "source_sha256": "e7b108c3a0337da523aeb549416369a1573ba800ee6420452b23eb290a1348a3",
+      "public_sha256": "50aefd6ba8e400c6869c8c689c1b344096409dc4edce61c2e6e76088e7bc2c3d"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma20_post_samples.json",
+      "source_sha256": "964216393bf86c54cbd4f87b049c66db5c919bcb8e1282d40ef69388fcaea682",
+      "public_sha256": "8203b5191012a36faf88df701ee0218d9ae0c45f2359a97bf66a15ca4525602c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma20_pre_samples.json",
+      "source_sha256": "60f0681e9962ff567b3f755cb88ea350f36bc569f6c134d3d429d5e14f71dff5",
+      "public_sha256": "9bfde8251c6193371c3822cd35d51c2cddcda34b1be635db27e011579fe1295c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma4_post_samples.json",
+      "source_sha256": "9dbac325956947a7c66ff71004c684899538a9835363b95e6de0bfe144da1d91",
+      "public_sha256": "b8c6600112cf0d655ce15339bbe1ac1827a91307b6254029754e51301b78f7b6"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma4_pre_samples.json",
+      "source_sha256": "04ce1a5d07a896da038e71a7c6101eb06af9b5975a3eeef33f81fcd3528d777e",
+      "public_sha256": "91f4a900e8900778ec5e8c41a781ccfce9ba01897d8cae7010ada3343542d47c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma4_return_post_samples.json",
+      "source_sha256": "9236c1ee597338f07911ed2aec155e168c14e26d4e2ffe0141283be1d531e5a4",
+      "public_sha256": "7a276bba2d8174a4f483787670236be845f476656ca2ad2b34c076f31a1171ee"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma4_return_pre_samples.json",
+      "source_sha256": "df561b6f8d5b79a49d6eff5d2affb79921fb52b3fb150eeb0ba03b436e61b445",
+      "public_sha256": "19253c4950e6ee3d1bafbcb2e7edc74315ba4f450045b023f51ac252f1b1c6c2"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma8_post_samples.json",
+      "source_sha256": "f0c452b66a074feeb071ab1d5a3b4e634acfe2b208fb88f358781eeb86c687bb",
+      "public_sha256": "e56022b22c68bfa6f630c26f9e521f722501b876f9162264f5c73c3aa4f5287a"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/fw23_r47_ma8_pre_samples.json",
+      "source_sha256": "971cc823f9f3ee7157e4a2a5bbf75bb7cf5305e26820fc6ba5d64e03a4d5c13c",
+      "public_sha256": "a8bc7fa85183d6482d0cb81646c8d9c8dbdfb2a97fafbad39733d7c53b667de9"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_0_return_usb14_on_samples.json",
+      "source_sha256": "051a7d13ded70873177caf44956d05872e1553f6034655cb88490845c53012b9",
+      "public_sha256": "757c7392917c4b07cdba055974eb2fc815b7fd439a8209e1a4e65aa5a058b120"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_110_usb14_on_samples.json",
+      "source_sha256": "148de8c763c0090d50e7a3af1d1ce816a238e4957a69f90b07c34853316e9c64",
+      "public_sha256": "daff003e65b827910428dd3795e58bea138537ebc83e54a52b093bb16232a868"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_150_usb14_on_samples.json",
+      "source_sha256": "3b58ffd3a7d68a8b18a62033063e7f851ecb98e4f2e68790b312e56cd8c1b50f",
+      "public_sha256": "6b41fac34eb782b8045e2006e048478000bf589745c9d203a398f5ddc342e422"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_30_usb14_on_samples.json",
+      "source_sha256": "cf663f77b9ba76af47da5873f606c3283aa062d3e62b47cd70bffe297aeaaeaa",
+      "public_sha256": "569e6d6689328aba6f34675456f8312edd182f0d36da1944f9e3b1f537b84275"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_70_usb14_on_samples.json",
+      "source_sha256": "7027c7ff89c5297af27d94c22a911fbcd98aa7dc09fbd9383d7271952071d681",
+      "public_sha256": "415f5ae9b779b8b0da872486d959669641b37fafe280381dd4a88da1c441145d"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_manual_minus10_usb14_on_samples.json",
+      "source_sha256": "02a1456d0556868caf138265aa562ddc8e55e854240911b772f0699270425909",
+      "public_sha256": "66bd341cd074e5bf5a07e51a6ae1ef787b574ac327673369d12f7619e8c56f91"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_r47_pt100_0_initial_samples.json",
+      "source_sha256": "8f1da0dc472a6eb9a2eb83ed7b2c97e32349456c8de205519eae294b591ce035",
+      "public_sha256": "7e1eec8cf49da82ef59955682513a72132415dceb6c8ebcb72342f7e415a453d"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_r47_pt100_0_return_samples.json",
+      "source_sha256": "a1142f8ed1a23713c808e2cff5489b1d60af1950cc34a1d373d1d17f431aaf7b",
+      "public_sha256": "278e60cd7710ca74f33cb54911466479d116080cbeb4b66dcb5c02de5546a476"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_r47_pt100_0_usb8_off_samples.json",
+      "source_sha256": "7fba121a5b06f5058a8603ae305596816c28664c08ae6a2a2bb1697b277411e2",
+      "public_sha256": "c84589d840880f351d758455b3365e5e02399c2cd22850f0e2a18c3a3d16fcd4"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_r47_pt100_30_samples.json",
+      "source_sha256": "25b2382641966513aa64ea3a97d06397ff5a67286e705cca32a7aa1a06aa365c",
+      "public_sha256": "b7377e97d29ab61c5c1899cba24c6ce4ae8deb0f389443d0cadb6f14ce3fd8c8"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/npt_r47_usb14_on_usb8_off_samples.json",
+      "source_sha256": "da850b6494c5c113bfa93244fb7c37c5b23b02b96a1c7d4bff1db66697fc65e8",
+      "public_sha256": "00f4f7855be7a5b2ba09a10f283d05b85fabf65b76ce089f047c45f16f86ffd7"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/ohms_100_confirm_samples.json",
+      "source_sha256": "08324877919e53ffd77c57660a19a2a523397b979b5ac3d1abe5a0dcab3c9de9",
+      "public_sha256": "52e675ed57ea5077a24c448e2383317f0a28585d1dad6ff6a3922b8fad3f5332"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/ohms_100_initial_samples.json",
+      "source_sha256": "b9778c513260ae95dc7ecf7811e4d7dd1e6c54e95822ddb45b5eb6708295a34d",
+      "public_sha256": "0a766fda6e64b0d2812a5a080146846b8cea8f2d49bc89af68f2972aba50d893"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/ohms_100_npt_usb_off_samples.json",
+      "source_sha256": "b940ae8ac42a05a112420dbf3a16196b97d712764bf0bbd9d0767614d4a404a4",
+      "public_sha256": "04332acba931283da669789b55d55a59363ff589421abd074487827cfb8ea28c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/pt100_0_return_samples.json",
+      "source_sha256": "dbedcf7d0df9ef99ce20b8ad17c35082c2c9c4b4100f5141fc08671d8fb9f128",
+      "public_sha256": "4df75135d32c4dd7f7e7d04a402bbdaef416056b0d00f4e625246ff0367931a3"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/pt100_0_samples.json",
+      "source_sha256": "4233753bf960eb2cf5a96e6b6b16fa2817295fbc81ce0608e7c0ce38769e762c",
+      "public_sha256": "05d5333b668dfcbd462efc2e1b9695d0aee67ddaa8d1e03e8b65f0f918483e7a"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/pt100_30_samples.json",
+      "source_sha256": "329537c7c05ef20bace2a38594864a9a9ab60ffe8b080318b421371f82f0a269",
+      "public_sha256": "94b40c5f3c05c78ad6702adf3495cbcabd8885ebafb42110288e1c2e19b798c6"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/pt100_30_settled_samples.json",
+      "source_sha256": "0a4b1746fb2a70bf7936e8c6acaf92fa38608fda7be41f5c00060bb7167be1b1",
+      "public_sha256": "b67496bfeb5dbfa2b6668bff677f03b0fff1ddeadf231094807c6c4ec864d0ef"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/r17_47k_rp1_back2_ma20_samples.json",
+      "source_sha256": "90ae4416ceb9546eca5b1a49df6eca89dc846a7d0692ee23bb3bcc1aaec90c8c",
+      "public_sha256": "8df366f20a8912376db37985eb409dc784e61d459e2986753aeea61a991ac631"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/r17_47k_rp1_back2_ma4_samples.json",
+      "source_sha256": "e1f94041f1a275c43ce666d77250edadb7179fccd6839b5753ad65695c756fa0",
+      "public_sha256": "b8eae82385d852e52f5877f5ddf44979e272327743a2c5eebcf5463ad266dc63"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/r17_return4_applied_samples.json",
+      "source_sha256": "0a23874b38ad26af10c9b7d205d418fa172f35840a9cf51892f9e53e4f5dc4b2",
+      "public_sha256": "90fa4310d74d7db62deea8ac9a394ab9368c8721fed6df306bf41a6d69d53d4e"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_before_final_adjust4_samples.json",
+      "source_sha256": "312e7a1f4f8a848a5d581f68d7754a0ae8d27537367a1b5f75ed5c817a0ebc8f",
+      "public_sha256": "a5db2b07ef8f2573374dc4ba0514089a7c5541cf8e6c62dab26d98951e669bc6"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_check20_samples.json",
+      "source_sha256": "4eccc61f84244c3ea0e1eca4e86b45191046be788f9267ce2dc825fb78868e11",
+      "public_sha256": "698284955162cf9b61c5a129ab02e3ac7e22b4dd909c6b27bf75b99ebead4193"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_cw_2p5_ma4_samples.json",
+      "source_sha256": "6b9757f19f3346803a40454c0615cf6f37679e787ad48ce51e0a6d3007d42f53",
+      "public_sha256": "31cc377ee59b720da6eb0b1a4ff924b0f1aacc4ea8477f6dafe74e352c9826be"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_cw_total14p5_ma4_samples.json",
+      "source_sha256": "93b0514e43b2afb7bfdf38264626666a94c43f3851ff285baa69774e4a9f71e3",
+      "public_sha256": "af63dfdacf645d01b1d17776f11f41e4c4f8166140ef79d860859dc9a6c2506c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_cw_total7p5_ma4_samples.json",
+      "source_sha256": "0e989f3abc65887ec9865210daf6d3ca245e56d8c4fef1e50aa4e0bbffa13bff",
+      "public_sha256": "b55d849b8abed6daa31b496d256e6fd46630c6487c41a17c8ef520f4a75c9348"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_endstop_ma20_samples.json",
+      "source_sha256": "7993f15a8dc5ebdc6857538a11961ef66a53f59069554a6cd1ed70d233e54386",
+      "public_sha256": "ba5f05b721fa46f2981113042f69ac01ad6e9e0af16be635d35523226c46d764"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_endstop_ma4_samples.json",
+      "source_sha256": "fea0703d960a58e7a3ba35ac44f5183f954fef9b1d021b56dfd3ee4a128874f6",
+      "public_sha256": "1a01c689aafde0831e2624ab81c5c33affe92ac21c59b8bca2a848ae2d5193fb"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/rp1_endstop_return4_samples.json",
+      "source_sha256": "2350ab4cd5ff9827cc9e01f72643da469e44d5a04e1c9eb73e69a5d80df71c79",
+      "public_sha256": "7d66b9043888abefaa74c2fd5f3418358c2e84c9b8a6c3a18896b65e133a84f9"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/raw/saved_calibration_after_reset_samples.json",
+      "source_sha256": "da2cd961acc75620efaf873f4c9343cf93167c901d8d811f7197e22fbf1e02f8",
+      "public_sha256": "8476783d3c2f65387ac75175d5b4ccdabe0591d4444d68fe65dfcb7512875282"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/npt_chain_result.json",
+      "source_sha256": "ff00615aa15a488633fba695df450179fe28ab542a04d297bcf909971e0abb5f",
+      "public_sha256": "8f9ded001f81ee1e447bf6907b26cbf833f898507f12a076e9815c72b2304823"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/loop_calibration_validation.json",
+      "source_sha256": "5e8c265ba33a8830e7012988ea564dc166211a8fd258f1ba580561c527b70f25",
+      "public_sha256": "5182f7bbc2085e65dbfd3ff244e93b0f956ecf46148f80d6e3133f53207c0a89"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/loop_calibration_saved.json",
+      "source_sha256": "2819f4b317d5378d72d160b4f8927c7bedcb5527a694671f5a535b52ed0107fa",
+      "public_sha256": "48abe7b04ee1883b0d25933a1f31b29b1ec98ed2414eb71e63f8bee118f6c264"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/loop_calibration_ram_applied.json",
+      "source_sha256": "6e517ef9e390c1d1d003a8f81bd0b0dfaac3b5b8a3dcdd829e7767b97b264891",
+      "public_sha256": "f092ec42f977653574b057938b048d1f75f10921608e00de773fcc3a1d4542d2"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/direct_current_analysis.json",
+      "source_sha256": "72b66415a60869e82ca94927751c580e6a0c7459bc0cafff8e3a0c710bc2ce8e",
+      "public_sha256": "80c840a9f176f76dd970b1a4189ef10199f1befb379247f5d4a30fbccc090c28"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/rp1_analysis.json",
+      "source_sha256": "fb55be09ada60249ba12390d0dd48a6a39717c9a58b40c93c7eb4cc4e6b3b18e",
+      "public_sha256": "48c1c1af2ed951ef8c6943da71c8c3c8eb7b7387efa4961f9cc603ffbd365cd5"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/diagnostic_summary.json",
+      "source_sha256": "79db7e08b0580eed8f4d3913be5c107afcdce719a569ea90708f5b796822995d",
+      "public_sha256": "4d7a7cdc40f72b743d37e276bc71eb05e8f7679dfd05d1d23652fbd88da47886"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/npt_final_recovered/color.png",
+      "source_sha256": "d60d217a6827b24008c3cc215486742920150466032e0e941a284e70fcb1537f",
+      "public_sha256": "d60d217a6827b24008c3cc215486742920150466032e0e941a284e70fcb1537f"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/npt_final_recovered/measurements.json",
+      "source_sha256": "d7e55e22bcc146876bd2073ac235d10d586ecff34ab517f6fbac63d0a1543c40",
+      "public_sha256": "fcb4f0b1df8daa9b4dd81feb3b0d0e233ab7970d4e53c6265c087d5273bf2927"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/npt_final_recovered/thermal.png",
+      "source_sha256": "d31f2e34475b9f584a0427c49b6801f3f829377d40d42cc4759bb0bc301ca6d6",
+      "public_sha256": "d31f2e34475b9f584a0427c49b6801f3f829377d40d42cc4759bb0bc301ca6d6"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/rp1_endstop/color.png",
+      "source_sha256": "cf0b7cdd2e1592e46686d57baaeb70dd2804d6bc9a5ea2c88b69fa96e507be9c",
+      "public_sha256": "cf0b7cdd2e1592e46686d57baaeb70dd2804d6bc9a5ea2c88b69fa96e507be9c"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/rp1_endstop/measurements.json",
+      "source_sha256": "7aba18f6d29d6b50302d10db9d44da5f959de16d1655a305115f88779c9ed916",
+      "public_sha256": "1050ecfcf806a5d1e85c49b6509aff9ff8709f3862e9e4eb95ca9b164174dd04"
+    },
+    {
+      "path": "measurements/2026-11-06_pt100_npt_loop/photos/rp1_endstop/thermal.png",
+      "source_sha256": "82fbe25a05a0522c86408ebc56fa6536ceed173a46f2dae652486ae5af3dd3e6",
+      "public_sha256": "82fbe25a05a0522c86408ebc56fa6536ceed173a46f2dae652486ae5af3dd3e6"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/pid60_hold5_01.json",
+      "source_sha256": "2f576704448bad8291274f0da6d9730b293bd5ae559ff26deae0f9ec5c57f24e",
+      "public_sha256": "fccff687b355dbae1c2b5e738974b7dee058d4ab1ab5005d3c81e07dee98c408"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/pid60_hold5_02.json",
+      "source_sha256": "a25eb5cafed2b824ae1e5bab4b919b0e52046ec95aa1b73ab9ed4628fc2606e0",
+      "public_sha256": "060f70d14e05cb5f44dadc1fc522059c1cb0dc4ba3a23833435ea638b3c411db"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/pid_analysis.json",
+      "source_sha256": "f2e322114a8010d2cf296c000920bb5d3258c8752273c8354a636d705cf953ef",
+      "public_sha256": "30cbd877462d8b5cae0cb11de328bf010835337eaa2eb9d0aa7396225a1bdb86"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/pid_final_stop.json",
+      "source_sha256": "70e2df8bc59a7251aafb5460f3657f90e599574415518a95ea9beab5ff6bc88e",
+      "public_sha256": "5e42fd749d4163cda9b8ea2027c130e6a17f5b76ae5911c4951136c03ec32b2d"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/pid_retuned_after_run1.json",
+      "source_sha256": "c3cf9877183103c06c503f92bad6dd2a8a995bbfb84edbed0bafff25799bf250",
+      "public_sha256": "5c0aa640b53341ff1da0689af082f9c32c93d850050f26641570242ee29da965"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/current_two_point_saved.json",
+      "source_sha256": "816cf791b844cf1ad40e15b54b641ece7d4c8e64e5d3b33e4b5e02b64b2fe8b9",
+      "public_sha256": "8943160e1ab8c922c39bda3958e021e190ae763a25b0bc2b5ee248ef473f23da"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/current_independent_tank_check.json",
+      "source_sha256": "e37a20380a3d99f4f194d7ab2cb9622edec44f685d67abbc2f389af3cb481794",
+      "public_sha256": "9a1295dc3be3bbc6388b483dac96c2127cb0cc92403f074949133a3e0cb4db2b"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/current_stronger_20s_01.json",
+      "source_sha256": "a8386c8ec710648f481232f6f382a541591c22c04be085c9f6544622e60f0095",
+      "public_sha256": "9a66979f796debc34a7d1f3dfb16b2257dccfed4654bad520ae145873106c731"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/reviewed_thermal_estimates.json",
+      "source_sha256": "54061c436e21c915500752f84095cf344ebda6cae3b841eb9a3115501a6248d9",
+      "public_sha256": "e8af07cc20427e20362c18c588f0a0aa8fcfc082dd2b369f53caa9202dc272b2"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/autonomous_no_heat.json",
+      "source_sha256": "4102c3824b4ba14a27de34a0f63014774f766279f4473fe2782c4cf431632a68",
+      "public_sha256": "fbcb9f2d92ba768ecc5a43292540f21404ae0e9d3e8628d6f1d55e313f859cb8"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/raw/firmware_2_5_verified_settings.json",
+      "source_sha256": "b7cefb67bc6e0843be278acd11123818915c7e71e9cb7bd5ddb2cbca4de1b52a",
+      "public_sha256": "3126e2d2d71a9ab28adbba37c96a56e70e29470d6596bb0d9575c19d32182ed6"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_01_004_heat/color.png",
+      "source_sha256": "7befa392763fc61af341378f6b65c83df3d9d45c1003347f374e86ec7177cb78",
+      "public_sha256": "7befa392763fc61af341378f6b65c83df3d9d45c1003347f374e86ec7177cb78"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_01_004_heat/measurements.json",
+      "source_sha256": "eb12250bc50f558d61899a0aa1c02d020d24b72de8a0e17d3a7272ab37d51cd9",
+      "public_sha256": "30ed4ace5039395b8d229e66ad570a2dfd3079921107c3823d1976285b114016"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_01_004_heat/thermal.png",
+      "source_sha256": "ddab16b0e1057f6bf4f809cd9632f86ea86aa5888f5ad063e447775cdf03ffd2",
+      "public_sha256": "ddab16b0e1057f6bf4f809cd9632f86ea86aa5888f5ad063e447775cdf03ffd2"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_02_007_heat/color.png",
+      "source_sha256": "ae95050783b168e51de823e6db7a02c28f03bf500b77b5ad9e0b4687736f81dd",
+      "public_sha256": "ae95050783b168e51de823e6db7a02c28f03bf500b77b5ad9e0b4687736f81dd"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_02_007_heat/measurements.json",
+      "source_sha256": "bc2d08518e42203c02532fc83cff3dfc9647a8a813c1f12a7165689ef1421bf6",
+      "public_sha256": "93574bd6c1a6421ab1a6d6ffcb5693edf92194ddf711ec815f29f0667e777317"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/pid60_hold5_02_007_heat/thermal.png",
+      "source_sha256": "966f4135675e665c4ec0b02375cb6c35116ec29312269531837115ce836c0984",
+      "public_sha256": "966f4135675e665c4ec0b02375cb6c35116ec29312269531837115ce836c0984"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_4s/color.png",
+      "source_sha256": "d1b8c5cb32cd7a4810878b7a07a489757193cccc2edda518a2228e450e55f22f",
+      "public_sha256": "d1b8c5cb32cd7a4810878b7a07a489757193cccc2edda518a2228e450e55f22f"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_4s/measurements.json",
+      "source_sha256": "104f4533ef88d061ef9eb54b433931641bd8735bc7492c0572571b181d783020",
+      "public_sha256": "9be1a19c329e985206073a5911c32157fce274e9fdf3153878aaf0ab4be2fc9b"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_4s/thermal.png",
+      "source_sha256": "dfa2dca4353e1f33c618e6819e01a8a8959e7c6b88a6aeed138dbe3b888f83dc",
+      "public_sha256": "dfa2dca4353e1f33c618e6819e01a8a8959e7c6b88a6aeed138dbe3b888f83dc"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_10s/color.png",
+      "source_sha256": "ad35457e6f0d04d38aff4e28b403061af85d9ec2c77e53dae3a3398d435e63a8",
+      "public_sha256": "ad35457e6f0d04d38aff4e28b403061af85d9ec2c77e53dae3a3398d435e63a8"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_10s/measurements.json",
+      "source_sha256": "4f1034236d32a4fb59185a11ae312b8e291a13150669e85aa715fc8a6fa17e63",
+      "public_sha256": "aa50faf81fa5133672b925d82cff4f7ba449d23db0c317bd5d388399c968a14d"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_10s/thermal.png",
+      "source_sha256": "a39c53e5d151d85525e8b1328b02c320e5dc563cf154a1f14c84ae376060289b",
+      "public_sha256": "a39c53e5d151d85525e8b1328b02c320e5dc563cf154a1f14c84ae376060289b"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_16s/color.png",
+      "source_sha256": "4fc85d86bdd4622553d065cb97a51869199e53cfb038db675e524107b32dbb83",
+      "public_sha256": "4fc85d86bdd4622553d065cb97a51869199e53cfb038db675e524107b32dbb83"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_16s/measurements.json",
+      "source_sha256": "f48ec7c36ebcf928451a98ef73c9f67ed87cddfb22ac4118f11cab217aecf148",
+      "public_sha256": "97af5649afa202299fda4f6675d7614cb919d99d8cb0490555174f329fc9a78a"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/current_stronger_20s_01_on_16s/thermal.png",
+      "source_sha256": "bc7c438b9236ec22d122ceaaabb0ec748e22e3117b9e3c47e16abe715de49c80",
+      "public_sha256": "bc7c438b9236ec22d122ceaaabb0ec748e22e3117b9e3c47e16abe715de49c80"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/thermal_raw_diagnostic_0247.png",
+      "source_sha256": "6b15b782d22fd3f74cdaebb1acb4f511b653c7050c220e798ae162021cd9764f",
+      "public_sha256": "6b15b782d22fd3f74cdaebb1acb4f511b653c7050c220e798ae162021cd9764f"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/raw_thermal_hold/20261107_025048.png",
+      "source_sha256": "5eeb68b69a2344a86852cfdf40a3da5f2f319210a5f663fa40342d729a1062b8",
+      "public_sha256": "5eeb68b69a2344a86852cfdf40a3da5f2f319210a5f663fa40342d729a1062b8"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/raw_thermal_hold/20261107_025349.png",
+      "source_sha256": "c2dd4c13214a0e22198becc62d0721045380293eefbef017b68c43f7c90987e4",
+      "public_sha256": "c2dd4c13214a0e22198becc62d0721045380293eefbef017b68c43f7c90987e4"
+    },
+    {
+      "path": "measurements/2026-11-07_heater_60c/photos/raw_thermal_hold/20261107_025850.png",
+      "source_sha256": "a95980b8686350549e3dd6ca408cf3226f8e1cb8f944e0a99d29699c05bd7963",
+      "public_sha256": "a95980b8686350549e3dd6ca408cf3226f8e1cb8f944e0a99d29699c05bd7963"
+    }
+  ]
+}

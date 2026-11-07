@@ -1,0 +1,1037 @@
+{
+  "protocol": "2.4",
+  "baud": 38400,
+  "data_bits": 8,
+  "parity": "E",
+  "stop_bits": 1,
+  "address_base": 0,
+  "register_byte_order": "big",
+  "multi_register_word_order": "high_first",
+  "crc_byte_order": "low_first",
+  "holding": [
+    {
+      "address": 0,
+      "name": "SETPOINT",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": 650,
+      "minimum": -2000,
+      "maximum": 18000,
+      "description": "Уставка температуры"
+    },
+    {
+      "address": 1,
+      "name": "TC_TYPE",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 3,
+      "minimum": 0,
+      "maximum": 7,
+      "description": "Термопара: 0=B, 1=E, 2=J, 3=K, 4=N, 5=R, 6=S, 7=T"
+    },
+    {
+      "address": 2,
+      "name": "CJ_MODE",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Компенсация: 0=внутренняя MAX31856, 1=внешняя PT100 через 4–20 мА"
+    },
+    {
+      "address": 3,
+      "name": "FILTER_60HZ",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Сетевой фильтр: 0=50 Гц, 1=60 Гц"
+    },
+    {
+      "address": 4,
+      "name": "AVERAGE_LOG2",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "log2",
+      "default": 2,
+      "minimum": 0,
+      "maximum": 4,
+      "description": "Усреднение MAX31856: 0/1/2/3/4 = 1/2/4/8/16"
+    },
+    {
+      "address": 5,
+      "name": "TC_TIMEOUT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 3000,
+      "minimum": 1500,
+      "maximum": 10000,
+      "description": "Максимальный возраст термопары / тайм-аут преобразования"
+    },
+    {
+      "address": 6,
+      "name": "CJ_OFFSET_C100",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "°C",
+      "default": 0,
+      "minimum": -800,
+      "maximum": 793,
+      "description": "Поправка внутреннего холодного спая; округляется к 0,0625 °C"
+    },
+    {
+      "address": 7,
+      "name": "TC_OFFSET_C100",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "°C",
+      "default": 0,
+      "minimum": -10000,
+      "maximum": 10000,
+      "description": "Поправка итоговой температуры термопары"
+    },
+    {
+      "address": 8,
+      "name": "KP_1000",
+      "type": "u16",
+      "divisor": 1000,
+      "unit": "%/°C",
+      "default": 2700,
+      "minimum": 0,
+      "maximum": 60000,
+      "description": "Kp"
+    },
+    {
+      "address": 9,
+      "name": "KI_1000",
+      "type": "u16",
+      "divisor": 1000,
+      "unit": "%/(°C·s)",
+      "default": 100,
+      "minimum": 0,
+      "maximum": 60000,
+      "description": "Ki"
+    },
+    {
+      "address": 10,
+      "name": "KD_100",
+      "type": "u16",
+      "divisor": 100,
+      "unit": "%·s/°C",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 60000,
+      "description": "Kd"
+    },
+    {
+      "address": 11,
+      "name": "D_FILTER_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 1000,
+      "minimum": 0,
+      "maximum": 10000,
+      "description": "Постоянная фильтра производной"
+    },
+    {
+      "address": 12,
+      "name": "PID_INTERVAL_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 500,
+      "minimum": 100,
+      "maximum": 5000,
+      "description": "Период расчёта PID"
+    },
+    {
+      "address": 13,
+      "name": "BURST_PERIOD_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms low word",
+      "default": 2000,
+      "minimum": 0,
+      "maximum": 65535,
+      "description": "Младшие 16 бит периода ШИМ; совместно с holding 46: 2000…300000 мс"
+    },
+    {
+      "address": 14,
+      "name": "OUTPUT_LIMIT_100",
+      "type": "u16",
+      "divisor": 100,
+      "unit": "%",
+      "default": 10000,
+      "minimum": 0,
+      "maximum": 10000,
+      "description": "Ограничение мощности"
+    },
+    {
+      "address": 15,
+      "name": "RAMP_C10_MIN",
+      "type": "u16",
+      "divisor": 10,
+      "unit": "°C/min",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 10000,
+      "description": "Скорость изменения рабочей уставки; 0 = без ограничения"
+    },
+    {
+      "address": 16,
+      "name": "PROCESS_MIN_C10",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": -500,
+      "minimum": -2000,
+      "maximum": 17990,
+      "description": "Нижний технологический предел"
+    },
+    {
+      "address": 17,
+      "name": "PROCESS_MAX_C10",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": 1500,
+      "minimum": -1990,
+      "maximum": 18000,
+      "description": "Верхний технологический предел"
+    },
+    {
+      "address": 18,
+      "name": "TOLERANCE_LOW_C10",
+      "type": "u16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": 100,
+      "minimum": 0,
+      "maximum": 18000,
+      "description": "Нижний допуск для реле K1"
+    },
+    {
+      "address": 19,
+      "name": "TOLERANCE_HIGH_C10",
+      "type": "u16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": 100,
+      "minimum": 0,
+      "maximum": 18000,
+      "description": "Верхний допуск для реле K1"
+    },
+    {
+      "address": 20,
+      "name": "CURRENT_GAIN_UA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "µA/count",
+      "default": 20350,
+      "minimum": 1000,
+      "maximum": 60000,
+      "description": "Коэффициент тока ACS712-30A после делителя платы"
+    },
+    {
+      "address": 21,
+      "name": "CURRENT_OFFSET_MA",
+      "type": "s16",
+      "divisor": 1,
+      "unit": "mA",
+      "default": 0,
+      "minimum": -5000,
+      "maximum": 5000,
+      "description": "Поправка RMS тока после пересчёта"
+    },
+    {
+      "address": 22,
+      "name": "CURRENT_NOISE_C100",
+      "type": "u16",
+      "divisor": 100,
+      "unit": "ADC count",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 20000,
+      "description": "Шум при нулевом токе; вычитается по квадратам"
+    },
+    {
+      "address": 23,
+      "name": "OVERCURRENT_MA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mA",
+      "default": 16000,
+      "minimum": 100,
+      "maximum": 30000,
+      "description": "Порог перегрузки"
+    },
+    {
+      "address": 24,
+      "name": "OVERCURRENT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 200,
+      "minimum": 0,
+      "maximum": 5000,
+      "description": "Задержка перегрузки после получения RMS"
+    },
+    {
+      "address": 25,
+      "name": "OFF_CURRENT_MA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mA",
+      "default": 500,
+      "minimum": 0,
+      "maximum": 30000,
+      "description": "Порог тока при выключенном выходе"
+    },
+    {
+      "address": 26,
+      "name": "OFF_CURRENT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 1500,
+      "minimum": 300,
+      "maximum": 10000,
+      "description": "Задержка ошибки тока при выключенном выходе"
+    },
+    {
+      "address": 27,
+      "name": "OPEN_CURRENT_MA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mA",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 30000,
+      "description": "Минимальный ток включённого нагревателя; 0 отключает диагностику обрыва"
+    },
+    {
+      "address": 28,
+      "name": "OPEN_CURRENT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 3000,
+      "minimum": 300,
+      "maximum": 30000,
+      "description": "Накопленное время достоверных ON-окон без достаточного тока; OFF не учитывается, нормальный ON-ток сбрасывает счётчик"
+    },
+    {
+      "address": 29,
+      "name": "COMM_TIMEOUT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 5000,
+      "minimum": 0,
+      "maximum": 60000,
+      "description": "Потеря связи с мастером; 0 отключает контроль"
+    },
+    {
+      "address": 30,
+      "name": "CURRENT_TIMEOUT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 600,
+      "minimum": 300,
+      "maximum": 5000,
+      "description": "Максимальный возраст измерения тока"
+    },
+    {
+      "address": 31,
+      "name": "EXT_TEMP_4_C10",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": -100,
+      "minimum": -2000,
+      "maximum": 18000,
+      "description": "Температура преобразователя PT100 при 4 мА"
+    },
+    {
+      "address": 32,
+      "name": "EXT_TEMP_20_C10",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "default": 1500,
+      "minimum": -2000,
+      "maximum": 18000,
+      "description": "Температура преобразователя PT100 при 20 мА"
+    },
+    {
+      "address": 33,
+      "name": "EXT_VOLT_4_MV",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mV",
+      "default": 517,
+      "minimum": 0,
+      "maximum": 2450,
+      "description": "Измеренное напряжение AD7741 при эталонных 4 мА"
+    },
+    {
+      "address": 34,
+      "name": "EXT_VOLT_20_MV",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mV",
+      "default": 2274,
+      "minimum": 50,
+      "maximum": 2500,
+      "description": "Измеренное напряжение AD7741 при эталонных 20 мА"
+    },
+    {
+      "address": 35,
+      "name": "EXT_OFFSET_UA",
+      "type": "s16",
+      "divisor": 1,
+      "unit": "µA",
+      "default": 0,
+      "minimum": -4000,
+      "maximum": 4000,
+      "description": "Дополнительная поправка тока петли"
+    },
+    {
+      "address": 36,
+      "name": "EXT_TEMP_OFFSET_C100",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "°C",
+      "default": 0,
+      "minimum": -10000,
+      "maximum": 10000,
+      "description": "Поправка температуры PT100"
+    },
+    {
+      "address": 37,
+      "name": "EXT_TIMEOUT_MS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "default": 1000,
+      "minimum": 300,
+      "maximum": 10000,
+      "description": "Максимальный возраст внешнего датчика"
+    },
+    {
+      "address": 38,
+      "name": "EXT_LOW_UA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "µA",
+      "default": 3600,
+      "minimum": 0,
+      "maximum": 4000,
+      "description": "Нижняя допустимая граница тока петли"
+    },
+    {
+      "address": 39,
+      "name": "EXT_HIGH_UA",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "µA",
+      "default": 21000,
+      "minimum": 20000,
+      "maximum": 24000,
+      "description": "Верхняя допустимая граница тока петли"
+    },
+    {
+      "address": 40,
+      "name": "CALIBRATION_FLAGS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bits",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Подтверждение калибровки: bit0=ACS712, bit1=PT100/4–20 мА; после проверки записать 1 или 3"
+    },
+    {
+      "address": 41,
+      "name": "PREFERRED_MODE",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 2,
+      "description": "Выбор в окне: 0=STOP, 1=AUTO PID, 2=MANUAL; действующий сохранённый режим — holding 45"
+    },
+    {
+      "address": 42,
+      "name": "MANUAL_PRESET_100",
+      "type": "u16",
+      "divisor": 100,
+      "unit": "%",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 10000,
+      "description": "Сохранённая ручная мощность; применяется отдельной командой запуска"
+    },
+    {
+      "address": 43,
+      "name": "RELAY_FUNCTION",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 1,
+      "minimum": 0,
+      "maximum": 6,
+      "description": "K1: 0=выключено, 1=в допуске, 2=в допуске после прогрева, 3=любая ошибка, 4=перегрузка, 5=обрыв нагревателя, 6=ошибка прибора"
+    },
+    {
+      "address": 44,
+      "name": "SOAK_SECONDS",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "s",
+      "default": 600,
+      "minimum": 0,
+      "maximum": 65535,
+      "description": "Выдержка прогрева после первого попадания в допуск; 0=без задержки"
+    },
+    {
+      "address": 45,
+      "name": "POWERUP_MODE",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 2,
+      "description": "Режим после питания: 0=STOP, 1=AUTO, 2=MANUAL; меняется командами 256 и сохраняется автоматически, прямая запись другого значения запрещена"
+    },
+    {
+      "address": 46,
+      "name": "BURST_PERIOD_MS_HIGH",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms high word",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 4,
+      "description": "Старшие 16 бит периода ШИМ; период = (holding46 << 16) | holding13; 2000…300000 мс. Обе части записывать атомарно FC16 0…46"
+    }
+  ],
+  "commands": [
+    {
+      "address": 256,
+      "name": "mode",
+      "values": {
+        "STOP": 0,
+        "AUTO": 1,
+        "MANUAL": 2
+      }
+    },
+    {
+      "address": 257,
+      "name": "manual_output",
+      "minimum": 0,
+      "maximum": 10000,
+      "divisor": 100
+    },
+    {
+      "address": 258,
+      "name": "save",
+      "key": 42330
+    },
+    {
+      "address": 259,
+      "name": "clear_faults",
+      "key": 49642
+    },
+    {
+      "address": 260,
+      "name": "current_test",
+      "key": 51728,
+      "read": "remaining_ms",
+      "maximum_duration_ms": 10000
+    },
+    {
+      "address": 261,
+      "name": "working_settings",
+      "count": 3,
+      "values": [
+        "setpoint_c10",
+        "tolerance_low_c10",
+        "tolerance_high_c10"
+      ],
+      "autosave": true
+    }
+  ],
+  "input": [
+    {
+      "address": 0,
+      "count": 1,
+      "name": "firmware_version",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "hex",
+      "description": "0x0205 = версия 2.5"
+    },
+    {
+      "address": 1,
+      "count": 1,
+      "name": "protocol_version",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "hex",
+      "description": "0x0204 = карта 2.4; прежние адреса сохранены"
+    },
+    {
+      "address": 2,
+      "count": 1,
+      "name": "slave_address",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "address",
+      "description": "Действующий адрес; 0 = недопустим"
+    },
+    {
+      "address": 3,
+      "count": 1,
+      "name": "rotary_raw",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "hex",
+      "description": "Текущее состояние двух переключателей"
+    },
+    {
+      "address": 4,
+      "count": 1,
+      "name": "mode",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "0=STOP, 1=AUTO, 2=MANUAL, 3=ограниченный тест тока; запуск только командой 260"
+    },
+    {
+      "address": 5,
+      "count": 1,
+      "name": "gate",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bool",
+      "description": "Состояние PA3"
+    },
+    {
+      "address": 6,
+      "count": 1,
+      "name": "relay",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bool",
+      "description": "Состояние K1"
+    },
+    {
+      "address": 7,
+      "count": 1,
+      "name": "cj_mode",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "Выбранный источник компенсации"
+    },
+    {
+      "address": 8,
+      "count": 2,
+      "name": "active_faults",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "bits",
+      "description": "Текущие причины запрета запуска"
+    },
+    {
+      "address": 10,
+      "count": 2,
+      "name": "latched_faults",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "bits",
+      "description": "Зафиксированные аварии"
+    },
+    {
+      "address": 12,
+      "count": 2,
+      "name": "uptime_s",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "s",
+      "description": "HAL tick / 1000; сброс при переполнении tick примерно через 49,7 суток"
+    },
+    {
+      "address": 14,
+      "count": 2,
+      "name": "temperature_sample",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Номер прочитанного преобразования MAX31856"
+    },
+    {
+      "address": 16,
+      "count": 1,
+      "name": "temperature",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "description": "Температура после поправки"
+    },
+    {
+      "address": 17,
+      "count": 1,
+      "name": "cold_junction",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "°C",
+      "description": "Компенсация, использованная MAX31856; при внешнем режиме это не внутренний датчик"
+    },
+    {
+      "address": 18,
+      "count": 1,
+      "name": "external_temperature",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "description": "Температура PT100 после масштабирования и поправки"
+    },
+    {
+      "address": 19,
+      "count": 1,
+      "name": "setpoint",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "description": "Заданная уставка"
+    },
+    {
+      "address": 20,
+      "count": 1,
+      "name": "working_setpoint",
+      "type": "s16",
+      "divisor": 10,
+      "unit": "°C",
+      "description": "Уставка после ограничения скорости"
+    },
+    {
+      "address": 21,
+      "count": 1,
+      "name": "output",
+      "type": "u16",
+      "divisor": 100,
+      "unit": "%",
+      "description": "Заданная мощность"
+    },
+    {
+      "address": 22,
+      "count": 1,
+      "name": "current",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mA",
+      "description": "AC RMS за 200 мс, включая паузы пакетного управления"
+    },
+    {
+      "address": 23,
+      "count": 1,
+      "name": "adc_mean",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "count",
+      "description": "Среднее АЦП, нулевая линия"
+    },
+    {
+      "address": 24,
+      "count": 1,
+      "name": "adc_rms",
+      "type": "u16",
+      "divisor": 10,
+      "unit": "count",
+      "description": "RMS переменной составляющей до калибровки"
+    },
+    {
+      "address": 25,
+      "count": 1,
+      "name": "adc_min",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "count",
+      "description": "Минимум за окно"
+    },
+    {
+      "address": 26,
+      "count": 1,
+      "name": "adc_max",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "count",
+      "description": "Максимум за окно"
+    },
+    {
+      "address": 27,
+      "count": 1,
+      "name": "external_voltage",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "mV",
+      "description": "Вход AD7741"
+    },
+    {
+      "address": 28,
+      "count": 1,
+      "name": "loop_current",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "µA",
+      "description": "Пересчитанный ток 4–20 мА; отрицательное значение отображается как 0"
+    },
+    {
+      "address": 29,
+      "count": 2,
+      "name": "external_frequency",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "Hz",
+      "description": "Частота FOUT"
+    },
+    {
+      "address": 31,
+      "count": 1,
+      "name": "max_status",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bits",
+      "description": "Младший байт SR MAX31856; 0x100=SPI, 0x200=DRDY timeout"
+    },
+    {
+      "address": 32,
+      "count": 1,
+      "name": "temperature_age",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "description": "Возраст; 65535 при недостоверности или насыщении"
+    },
+    {
+      "address": 33,
+      "count": 1,
+      "name": "current_age",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "description": "Возраст тока"
+    },
+    {
+      "address": 34,
+      "count": 1,
+      "name": "external_age",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "ms",
+      "description": "Возраст внешнего датчика"
+    },
+    {
+      "address": 35,
+      "count": 1,
+      "name": "measurement_flags",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bits",
+      "description": "bit0=TC, bit1=current, bit2=external: последнее преобразование успешно; также проверять возраст и аварии"
+    },
+    {
+      "address": 36,
+      "count": 1,
+      "name": "config_dirty",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bool",
+      "description": "Настройки в RAM отличаются от сохранённых"
+    },
+    {
+      "address": 37,
+      "count": 1,
+      "name": "storage_status",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "0=загружено, 1=ожидание, 2=сохранено, 3=defaults, 4=ошибка I2C/проверки"
+    },
+    {
+      "address": 38,
+      "count": 2,
+      "name": "saved_sequence",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Номер записи EEPROM"
+    },
+    {
+      "address": 40,
+      "count": 2,
+      "name": "config_revision",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Номер изменения настроек в RAM"
+    },
+    {
+      "address": 42,
+      "count": 2,
+      "name": "adc_overruns",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Пропуски окон ADC/DMA"
+    },
+    {
+      "address": 44,
+      "count": 1,
+      "name": "pid_integral",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "%",
+      "description": "Интегральная составляющая"
+    },
+    {
+      "address": 45,
+      "count": 1,
+      "name": "pid_derivative",
+      "type": "s16",
+      "divisor": 100,
+      "unit": "°C/s",
+      "description": "Отфильтрованная отрицательная производная PV; насыщается до s16"
+    },
+    {
+      "address": 46,
+      "count": 1,
+      "name": "current_sensor_amperes",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "A",
+      "description": "Установленный вариант ACS712: 30"
+    },
+    {
+      "address": 47,
+      "count": 1,
+      "name": "calibration_flags",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "bits",
+      "description": "Повтор holding 40"
+    },
+    {
+      "address": 48,
+      "count": 2,
+      "name": "modbus_valid",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Успешные запросы на читаемом порту до текущего запроса"
+    },
+    {
+      "address": 50,
+      "count": 2,
+      "name": "modbus_crc_errors",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "CRC ошибки этого порта"
+    },
+    {
+      "address": 52,
+      "count": 2,
+      "name": "modbus_malformed",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Ошибки длины/тайм-аут TX этого порта"
+    },
+    {
+      "address": 54,
+      "count": 2,
+      "name": "modbus_exceptions",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Ответы исключения этого порта"
+    },
+    {
+      "address": 56,
+      "count": 2,
+      "name": "modbus_framing_errors",
+      "type": "u32",
+      "divisor": 1,
+      "unit": "counter",
+      "description": "Ошибки UART/пауз/переполнения/лишние байты во время готового кадра"
+    },
+    {
+      "address": 58,
+      "count": 1,
+      "name": "relay_function",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "Повтор holding 43"
+    },
+    {
+      "address": 59,
+      "count": 1,
+      "name": "soak_state",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "0=STOP, 1=ожидание допуска, 2=выдержка, 3=прогрев завершён"
+    },
+    {
+      "address": 60,
+      "count": 1,
+      "name": "soak_remaining",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "s",
+      "description": "Оставшееся время выдержки; до первого допуска полное время"
+    },
+    {
+      "address": 61,
+      "count": 1,
+      "name": "powerup_mode",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "Повтор holding 45; факт сохранения проверять по input 37"
+    },
+    {
+      "address": 62,
+      "count": 1,
+      "name": "boot_status",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "enum",
+      "description": "0=обычная работа, 1=ожидание датчиков после питания, 2=режим восстановлен, 3=восстановление отменено"
+    },
+    {
+      "address": 63,
+      "count": 1,
+      "name": "config_count",
+      "type": "u16",
+      "divisor": 1,
+      "unit": "registers",
+      "description": "Число настроек: 47"
+    }
+  ]
+}

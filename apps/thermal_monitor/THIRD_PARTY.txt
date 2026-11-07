@@ -1,0 +1,29 @@
+UTi260B screen decoder
+Source: https://github.com/PolarZ5/uti260b-thermal-studio
+Downloaded: 2026-11-05, branch main.
+Source ZIP SHA256: 3c99f25cdc83c456da484652bcc7149d461dd0382079184a70178453dc780107
+License: MIT, Copyright (c) 2026 PolarZ5.
+Files retained in vendor/uti260b: decoder.py, osd.py, markers.py, palettes.py,
+layout.py, bmpfile.py, assets.npz, __init__.py.
+Full license: vendor/uti260b/LICENSE-PolarZ5.txt.
+
+Local modification to osd.py:
+The degree symbol is located relative to the adjacent C/F glyph baseline.
+This prevents a bright background at the left edge from hiding the center reading.
+Regression checked against the connected UTi260B: min 22.2, max 33.2, center 27.9 C.
+
+Palette and glyph assets / BMP format credit:
+https://github.com/Santi-hr/UNI-T-Thermal-Utilities
+MIT, Copyright (c) 2020 Santi-hr.
+Full license: vendor/uti260b/LICENSE-Santi-hr.txt.
+
+The rest of the application (capture, model, imaging, API, UI, launcher and tests)
+was implemented locally for this bench. No upstream GUI or remote executables are run.
+
+Dependencies installed in the isolated virtual environment:
+PySide6 Essentials — https://doc.qt.io/qtforpython-6/ — LGPL/GPL/commercial options.
+OpenCV — https://opencv.org/ — see distribution license.
+NumPy — https://numpy.org/ — BSD.
+Pillow — https://python-pillow.github.io/ — HPND.
+imageio-ffmpeg / bundled FFmpeg — https://github.com/imageio/imageio-ffmpeg
+Review the packaged FFmpeg build's license if distributing binaries.

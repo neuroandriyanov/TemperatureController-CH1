@@ -1,0 +1,77 @@
+{
+  "note": "References retained in historical numeric records; attachments not included in the curated public set.",
+  "files": [
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/fw23_r47_ma16_post.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/fw23_r47_ma4_post.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/fw23_r47_ma8_post.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_0_return_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_0_return_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_110_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_110_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_150_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_150_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_30_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_30_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_70_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_70_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_minus10_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_manual_minus10_ui.txt"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_usb14_on_usb8_off_ui.png"
+    },
+    {
+      "series": "2026-11-06_pt100_npt_loop",
+      "path": "raw/npt_usb14_on_usb8_off_ui.txt"
+    },
+    {
+      "series": "2026-11-07_heater_60c",
+      "path": "raw/current_initial_pulse.json"
+    }
+  ]
+}

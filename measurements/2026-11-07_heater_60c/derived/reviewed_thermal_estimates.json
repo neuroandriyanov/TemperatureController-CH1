@@ -1,0 +1,110 @@
+[
+  {
+    "image": "photos/thermal_raw_diagnostic_0247.png",
+    "visually_reviewed_menu_absent": true,
+    "decoder_menu_heuristic": true,
+    "scale_source": "osd",
+    "scale_min": 26.0,
+    "scale_max": 38.3,
+    "center_display": 27.5,
+    "approximate": true,
+    "method": "Existing palette decoder applied offline; unchanged masks and fresh OSD range; separately reported, never imputed into live data",
+    "points": {
+      "A": {
+        "pixel": [
+          268,
+          155
+        ],
+        "temperature": 31.65045928955078
+      },
+      "B": {
+        "pixel": [
+          274,
+          167
+        ],
+        "temperature": 30.978899002075195
+      }
+    }
+  },
+  {
+    "image": "photos/raw_thermal_hold/20261107_025048.png",
+    "visually_reviewed_menu_absent": true,
+    "decoder_menu_heuristic": true,
+    "scale_source": "osd",
+    "scale_min": 26.0,
+    "scale_max": 35.3,
+    "center_display": 27.5,
+    "approximate": true,
+    "method": "Existing palette decoder applied offline; unchanged masks and fresh OSD range; separately reported, never imputed into live data",
+    "points": {
+      "A": {
+        "pixel": [
+          268,
+          155
+        ],
+        "temperature": 31.50733757019043
+      },
+      "B": {
+        "pixel": [
+          274,
+          167
+        ],
+        "temperature": 31.129661560058594
+      }
+    }
+  },
+  {
+    "image": "photos/raw_thermal_hold/20261107_025349.png",
+    "visually_reviewed_menu_absent": true,
+    "decoder_menu_heuristic": true,
+    "scale_source": "osd",
+    "scale_min": 26.0,
+    "scale_max": 35.2,
+    "center_display": 27.2,
+    "approximate": true,
+    "method": "Existing palette decoder applied offline; unchanged masks and fresh OSD range; separately reported, never imputed into live data",
+    "points": {
+      "A": {
+        "pixel": [
+          268,
+          155
+        ],
+        "temperature": 31.566972732543945
+      },
+      "B": {
+        "pixel": [
+          274,
+          167
+        ],
+        "temperature": 31.151071548461914
+      }
+    }
+  },
+  {
+    "image": "photos/raw_thermal_hold/20261107_025850.png",
+    "visually_reviewed_menu_absent": true,
+    "decoder_menu_heuristic": true,
+    "scale_source": "osd",
+    "scale_min": 26.2,
+    "scale_max": 35.2,
+    "center_display": 27.2,
+    "approximate": true,
+    "method": "Existing palette decoder applied offline; unchanged masks and fresh OSD range; separately reported, never imputed into live data",
+    "points": {
+      "A": {
+        "pixel": [
+          268,
+          155
+        ],
+        "temperature": 31.726369857788086
+      },
+      "B": {
+        "pixel": [
+          274,
+          167
+        ],
+        "temperature": 31.230722427368164
+      }
+    }
+  }
+]
