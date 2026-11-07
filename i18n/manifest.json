@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "sourceLanguage": "ru",
+  "targetLanguage": "en",
+  "workflow": "Russian first; record each translated pair only after reviewing it. See docs/TRANSLATION.md.",
+  "entries": [
+    {
+      "source": "NOTICE.md",
+      "target": "NOTICE.en.md",
+      "sourceSha256": "36ad1d05e529852df568b17ab6ddab0f30f409c4bdba5da5233bf17e772aad10",
+      "targetSha256": "82ff9dac1302c49b20396f5cbb93ac4f5ac00467f1b65ed1d64c86ded1cc8d6e",
+      "status": "reviewed"
+    },
+    {
+      "source": "README.md",
+      "target": "README.en.md",
+      "sourceSha256": "3afe7a7307b7196f6a196d3e0911f12a64e48cf051da15169efec095165d14da",
+      "targetSha256": "f81cb01dc47598aa571b1085f2e6c9b4c6b73514facce87bd866a6c163add26e",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/calibrator_lb02a/README.md",
+      "target": "apps/calibrator_lb02a/README.en.md",
+      "sourceSha256": "7248278d385b6f9472bef06acdcfc9f4136d07cee5154a95003f6c2e7870e08e",
+      "targetSha256": "0349fd8df0a2c6d7dfd9e4077a80ff4eb6d0efdbb93b60979739fc5ce5b83784",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/controller/README.md",
+      "target": "apps/controller/README.en.md",
+      "sourceSha256": "880877b2ef4d257cc616b0a56382601a7352b920923c5b6388af44eeee71786b",
+      "targetSha256": "98b9ba8df12416f5402d1c5e984e66f9054169981df4077368d7d90447b6ae7e",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/controller/THIRD_PARTY.txt",
+      "target": "apps/controller/THIRD_PARTY.en.txt",
+      "sourceSha256": "c6874f694fe7263a4db3a2fe9aa2178ada5a83bb56da89935beee85e1b6dff84",
+      "targetSha256": "8b42039261afe17dd6c9bd43ffacd0afca75b5545d079430a0fead6a93e47380",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/controller/ИНСТРУКЦИЯ.txt",
+      "target": "apps/controller/ИНСТРУКЦИЯ.en.txt",
+      "sourceSha256": "494a85cdcc3912c6ee6af357a22c9efc0197ec6e7fdc151f834b7fcded978562",
+      "targetSha256": "d4009d06ee15e3cf99ed3629981d494a735f9304ebd8c87c1e2e92d71d010aec",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/stm32_programmer/README.md",
+      "target": "apps/stm32_programmer/README.en.md",
+      "sourceSha256": "29dff7e33809d7fa620129278e8bbb32245de52edde6376990989c79b35ee841",
+      "targetSha256": "b6cac72d10b4c7fe16e7c4d19f760f6f2f15cf9519125ee82ca271c9d0771e70",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/stm32_programmer/ИНСТРУКЦИЯ.txt",
+      "target": "apps/stm32_programmer/ИНСТРУКЦИЯ.en.txt",
+      "sourceSha256": "f8e9bf53fdedf475a7cacb2877a3da85d4a2441097b890407182c398bff62bda",
+      "targetSha256": "d362907fc7d17fd0fdc7bf1b8f9b0d7fc64cda6ef57dd9d0a2755c53cd848b60",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/thermal_monitor/API.txt",
+      "target": "apps/thermal_monitor/API.en.txt",
+      "sourceSha256": "ea0175d1ef6ff5421cde282ca20205032bba25d6e5744118ddb0e51c667c28ac",
+      "targetSha256": "d8fd093b0b3e252212ff4c4c5f9d48141a0acc7b65979cdc5103790b64ea8794",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/thermal_monitor/README.md",
+      "target": "apps/thermal_monitor/README.en.md",
+      "sourceSha256": "1f969cdb287ddbc55c3d644acda2260a8afc625aa1fd2b65f08c93f744107e97",
+      "targetSha256": "e2564423731a819aa6bc13de1842d1a28f8af336cb1cf89f81dfb8be7dc1a6a5",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/thermal_monitor/fixtures/README.md",
+      "target": "apps/thermal_monitor/fixtures/README.en.md",
+      "sourceSha256": "919d287f603b98b64434dd392cfab12ec3cb1937e1ce13498c41631b53fab79a",
+      "targetSha256": "1b2fe6b6e82830c29b778c468eb122e6a098053eb8612bf470a8035890a8b7d5",
+      "status": "reviewed"
+    },
+    {
+      "source": "apps/thermal_monitor/ИНСТРУКЦИЯ.txt",
+      "target": "apps/thermal_monitor/ИНСТРУКЦИЯ.en.txt",
+      "sourceSha256": "19861ef360a03f305a9c8cbe14fa900a9c5c72b481b5da20373ff475fa59d430",
+      "targetSha256": "ece182c1e141657cdf11b136e8830690e545f1255e736cf3c523f3fd40c15ba2",
+      "status": "reviewed"
+    },
+    {
+      "source": "docs/AI_START.md",
+      "target": "docs/AI_START.en.md",
+      "sourceSha256": "648bcb0a236c664b97e35f1a0f6da04c646ff1c17b8a9f9023f0cc735af7ebda",
+      "targetSha256": "ef039cad66eb3f056a629e8a936b6ec8694de9399839f30d77f44f014be62399",
+      "status": "reviewed"
+    },
+    {
+      "source": "docs/QUICKSTART.md",
+      "target": "docs/QUICKSTART.en.md",
+      "sourceSha256": "fc7cab091e7b2090a54bd103ad03f387edaaadccd57698db2fb3a8d4ce175092",
+      "targetSha256": "b90bb2d93114168a080570e9b8e76bde9901f0358ca9a48df979e6d30d4d4f2b",
+      "status": "reviewed"
+    },
+    {
+      "source": "docs/TRANSLATION.md",
+      "target": "docs/TRANSLATION.en.md",
+      "sourceSha256": "9607744951cf3fa4d7f24bb8c0c7ee80ef3b84eb3f818a0396549a19d11390d1",
+      "targetSha256": "b126151c6944325fc9d32b4f20fef262d69b2bc474a63264ba52fc27fc2c0bdd",
+      "status": "reviewed"
+    },
+    {
+      "source": "docs/VALIDATION.md",
+      "target": "docs/VALIDATION.en.md",
+      "sourceSha256": "16ffd17078e5c79d22e3531cfd8bfddb04f3baa6ab61fcdaddcc915890586478",
+      "targetSha256": "f70acac971f090ba63fcdb63c0882d70e8207e0d61b990789e2da8b1b614a9cd",
+      "status": "reviewed"
+    },
+    {
+      "source": "docs/index.html",
+      "target": "docs/index.en.html",
+      "sourceSha256": "27477b92f3452fcc4510a0577eb9861a49a79e420d53a791cdb2600b5ff31367",
+      "targetSha256": "e2d0cf4ccc6c3c89f4d8d7838dbb5187ba17dd34aae65606694327879638025a",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/README.md",
+      "target": "firmware/README.en.md",
+      "sourceSha256": "09c628370920bb9a79e541ae75bd91bd60078f6a6b6a2ad2af0924b11410d2ba",
+      "targetSha256": "a361576bf54dd3a760310bc48109b93a5e4f6fdc40142c29f5e067be927f698d",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/THIRD_PARTY.md",
+      "target": "firmware/THIRD_PARTY.en.md",
+      "sourceSha256": "d741407568b425d1ceac381228d2da2c5912e6ddfd3f5d5f603d81cd2144b605",
+      "targetSha256": "2baa6a6e7977757b9294bb051e67d9e45d8051faf07c54a6d5a8291842b8ab25",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/docs/CALIBRATION.md",
+      "target": "firmware/docs/CALIBRATION.en.md",
+      "sourceSha256": "21a7018a3cfa90684c885f4b27b6704e470aebaad9d16050c704d0c4569b092c",
+      "targetSha256": "110872a11c1c6162affd047d5d312b40ee972643432083647af0eb3b95d76422",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/docs/HARDWARE.md",
+      "target": "firmware/docs/HARDWARE.en.md",
+      "sourceSha256": "56cc10abda323f57bfbab769a4e4df30549181a3090d7da570a41949a5d3c452",
+      "targetSha256": "e1d18c1ee246399cf9a022950c1194842363c5df80f7dc4791694c88298ac6b4",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/docs/PROTOCOL.md",
+      "target": "firmware/docs/PROTOCOL.en.md",
+      "sourceSha256": "c26f7b36993f888ef50fc73b0dfba36a174aaf527c7bdf0b941a707315121ac5",
+      "targetSha256": "a707b7ccaad4ab359028f88e05919cbd5ce2c4f3c8f3bfc50b661518eaa5ffcf",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/docs/REGISTERS.md",
+      "target": "firmware/docs/REGISTERS.en.md",
+      "sourceSha256": "c3adeeb9557208285c6363819e10b0e9f8fa362d8b46c7f3fa5f88ea52f762ae",
+      "targetSha256": "bd7fe2f194d5135be87f5a38b82ece2de55ea9e9dcf20b1227dcacbc752c0c7b",
+      "status": "reviewed"
+    },
+    {
+      "source": "firmware/docs/VALIDATION.md",
+      "target": "firmware/docs/VALIDATION.en.md",
+      "sourceSha256": "11da4f5bc292b60beed67e935889697903ab9933b1ed2d580293896367bae21b",
+      "targetSha256": "f6a839521ed1ebc5b5271076cedcf50863e4922cb0140419e6e9f6138d0813ae",
+      "status": "reviewed"
+    },
+    {
+      "source": "hardware/README.md",
+      "target": "hardware/README.en.md",
+      "sourceSha256": "8046a9cf99ab417f094751df086995cbd3b74aec3f368e6e2e13dd4172ee033a",
+      "targetSha256": "7602918cd9276a5d41b61a99c45068b64e7fbfac0fe0e624f7a1d6529403e4b5",
+      "status": "reviewed"
+    },
+    {
+      "source": "hardware/boards/Specification_SSR_P_V01.xlsx",
+      "target": "hardware/boards/Specification_SSR_P_V01.en.xlsx",
+      "sourceSha256": "7e7e95df8f642c3aebc585649231e66cb6c89aba6cd1cd0038ad9514d30d7d66",
+      "targetSha256": "414350621c798330480c1a5c0ab2a71bf845f9ba56ab0b6bcbefa83683401904",
+      "status": "reviewed"
+    },
+    {
+      "source": "hardware/boards/bom_ssr_cpu_v2_3.xlsx",
+      "target": "hardware/boards/bom_ssr_cpu_v2_3.en.xlsx",
+      "sourceSha256": "c40c746739956206cbed8202c183e86a9cd9c9e7d73e635fcfe345df1cf5607b",
+      "targetSha256": "dd043ef5bf7afe13f60596cea10cc5ac628d5210ef3ea3a7db73586084c56602",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/ARCHITECTURE.md",
+      "target": "knowledge/ARCHITECTURE.en.md",
+      "sourceSha256": "193c7ea0496db55a66bc6df998b4f0599f35d58eec415bfec1d363101f68261e",
+      "targetSha256": "dfbf8bd602022caafb497c4e096ac4dfac2be853ca1a7e393353d65e9a104bb7",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/FORMAT.md",
+      "target": "knowledge/FORMAT.en.md",
+      "sourceSha256": "a993d8242c8ac335ef0f96aff315bf70b5f6290e66df700b556913a9ddbfea44",
+      "targetSha256": "650dab6441e7ecb0f30b1367955cbaadb98367faa99e07d43234bd5fdffcb2f5",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/OPEN_QUESTIONS.md",
+      "target": "knowledge/OPEN_QUESTIONS.en.md",
+      "sourceSha256": "1d8505e5060abce88fe254add6a57c3826af11b8f1080e1037622fb5be57dbd3",
+      "targetSha256": "a721af6c6ed5344d5a8ad7aa01bfe55a92030e7f4b134d3187cee7b8e43747cb",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/README.md",
+      "target": "knowledge/README.en.md",
+      "sourceSha256": "492a56ba7a1572b64df9c57566d05f63ac78dbcb0af02fc83e68f680cc30e9d3",
+      "targetSha256": "eaf500913612f6d2419fe8810290dd4d9b15d94d3204323e8256cb82cfc34aad",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/facts.json",
+      "target": "knowledge/facts.en.json",
+      "sourceSha256": "ef59fe06a9f6bac4dbe6d07a490dcafdd4cdcbecc9abb80ef292f8337a725d76",
+      "targetSha256": "beb0b2da748f60dfaa05e9aa6cf51a52ce23d1a112a2e17fe7844dbf819a9f36",
+      "status": "reviewed"
+    },
+    {
+      "source": "knowledge/index.json",
+      "target": "knowledge/index.en.json",
+      "sourceSha256": "873b3eb6130091931bf92e6048046330ba8e580080f0b3404a74309d38a57658",
+      "targetSha256": "aeb904c9dd2e2b0093f531f2419f686c53df7be7048281a27fd66a0bef3ed36f",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/README.md",
+      "target": "measurements/2026-11-06_pt100_npt_loop/README.en.md",
+      "sourceSha256": "bd2feb0b539c9f065d7c4662fc35029cd366037d452ebed3bf67a0e692dc20d7",
+      "targetSha256": "1fbeb62ece6b60ed647a4f51cf6545b282b0debe603679a8c5e1ab44c598cc36",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.png",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.en.png",
+      "sourceSha256": "ca344167f9fdfef2aabf04b2b65956f4660d1713e3a49e53953a0de7419734cd",
+      "targetSha256": "6a30b15675de31492c58b5b320b3fecda56e4398c059445ac268b1095c7d3274",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.svg",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/current_loop.en.svg",
+      "sourceSha256": "4891ed47bcb64fcc922d4019fbb95c590ac4f1fea2a9ec2223f654d5a31abe5a",
+      "targetSha256": "67d9e12989a45e1c2221d208dd2be391e6a05b791cbe54807f2fad63eb899047",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.png",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.en.png",
+      "sourceSha256": "e8e32cd066b8b965169c7e1dbf23c1e063397bfc0ebd81ed530be4460c14de18",
+      "targetSha256": "87da5686a3d6e9e44a26f9050239a1790d88ffc94912e650791c02cf4fab062f",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.svg",
+      "target": "measurements/2026-11-06_pt100_npt_loop/plots/pt100_chain.en.svg",
+      "sourceSha256": "f78cc26b337c0ec3d7ec56853ae363f1abcb19a2f4f2477e650cbe046a3281e7",
+      "targetSha256": "3a5eb6db83010d89202edfa3d68c76e57f2092b94b5d4af2c14c098fc7eb04da",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/README.md",
+      "target": "measurements/2026-11-06_thermocouple_input/README.en.md",
+      "sourceSha256": "8b25a756206610b3c2fc434336a52b111a6ece4d2c8fa5e3682c8f46bdb8745b",
+      "targetSha256": "300632bf7c27c344ba65e7b6c293db94c67d3d0ce85f709d2a23f402f0433577",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.png",
+      "target": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.en.png",
+      "sourceSha256": "e7056e09a04d28fec1f2ab32f4d87b023f84f057c3de8a0bfd7ab7a88e608c01",
+      "targetSha256": "8b9eb8440e1ee47cc9aae881fde3f16f6323a8f0a526514d8b4ccb7f7105f838",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.svg",
+      "target": "measurements/2026-11-06_thermocouple_input/plots/thermocouples.en.svg",
+      "sourceSha256": "18c6d4357ea4602c12983e00e8d6d7a1a040db217dcb41529ba46411608bdf40",
+      "targetSha256": "fa26aae95b322c85407e071280d3891372d64ab1a790a4ab35a6a82d38363208",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/README.md",
+      "target": "measurements/2026-11-07_heater_60c/README.en.md",
+      "sourceSha256": "a964dbac219dbd14badb627a1cbe5510f646bdb5958f0aac58fee70df12297d8",
+      "targetSha256": "f39ca2feac0c7ab8702f6c36aa99cf7e6db74c17f13df73890480e1efe7dca31",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.en.png",
+      "sourceSha256": "2e739c5112638387db3b0c42dcbeffef5caa7b652d7cceb9f232ce15d6793866",
+      "targetSha256": "fb2348bce2a643842fbcefdd8ccc153fca1ae47df6ad658fe9bc71903f3d027c",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01.en.svg",
+      "sourceSha256": "a832f3f03ad3c2f95857cb2e6229cbf8c3695344b63454b31a7530971c65b704",
+      "targetSha256": "f598ef6596317cb6962b0859c7f868a18ce38ba5706e2b91d4ca446fe43c4dfa",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.en.png",
+      "sourceSha256": "3dab325f7a86b4e912d5ad1896538142653f02013fd7a213e8c2e28926bfbe34",
+      "targetSha256": "b184b02c1ada46eeece7bd9a15175b09babb828ef11515ba67d7a709dd806d36",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_01_hold.en.svg",
+      "sourceSha256": "5c0d3a1742dac6d7710ceb747c660ce6985898fb2855204ac93d14fb7f78adb1",
+      "targetSha256": "2f19c3c58d9f92d7766ba74788002ecb86cb29ba45d2ce9e13906d5a5fbe71d4",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.en.png",
+      "sourceSha256": "3906e600166b584d1c7c2b4aafe1c2af55a1d6d787e6a8124a8646c7eafb1228",
+      "targetSha256": "1508769a1d44864aef724d917434a91a9c5efbd661f4c9b6025b061c70aa563e",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02.en.svg",
+      "sourceSha256": "95737c3481e4fbf87e2ec405b98e8a42d08062f3430853b9563c4ef131831b1d",
+      "targetSha256": "43233d75e5563caa415ba433889e6bb6a41f2f9cbb08db57fa5420adcb61c438",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.png",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.en.png",
+      "sourceSha256": "0ac3da99156bf7bd15abc0fbc4bfddf259d47e91c080791e2363c2f56f2bf5fc",
+      "targetSha256": "f340e23ecd3e9ff630fb56b940ebe0dc5b70f9b6ebba34214f37f12924d31ead",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.svg",
+      "target": "measurements/2026-11-07_heater_60c/plots/pid60_hold5_02_hold.en.svg",
+      "sourceSha256": "33d0f45e1f59dc9c1287d1736e8eee099192339cc1e923c48b8447f07638384d",
+      "targetSha256": "2f456a1d3f8c6fa8d36d70b7d2c79dd6f54c3b551aaf30eee91c9e698ef2bfc8",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/PROVENANCE.md",
+      "target": "measurements/PROVENANCE.en.md",
+      "sourceSha256": "09f41de1fe9522d364266dc704c2b004dbfa796588312ed73e5bccf2f6d606e3",
+      "targetSha256": "e6ae25ff692cc17c0c465112b8c60fb37d45f3b073e6ebf178c1e8015ada5701",
+      "status": "reviewed"
+    },
+    {
+      "source": "measurements/README.md",
+      "target": "measurements/README.en.md",
+      "sourceSha256": "63127bf18e7e50987af920e262069f9d2bb78fb39d4c1ba34bb734c0753acaf3",
+      "targetSha256": "6c072f1d6b566570c5223124db0e81d1a2f0d615525838e5d20af2b47a99fd57",
+      "status": "reviewed"
+    }
+  ],
+  "shared": [
+    {
+      "path": "AGENTS.md",
+      "reason": "Existing contributor instructions are already English."
+    },
+    {
+      "path": "apps/thermal_monitor/THIRD_PARTY.txt",
+      "reason": "Already English; upstream license notices remain original."
+    },
+    {
+      "path": "hardware/boards/схема_управления.pdf",
+      "reason": "Visually checked all 6 pages: English title blocks and technical identifiers, shared unchanged."
+    },
+    {
+      "path": "hardware/boards/схема_тиристор.pdf",
+      "reason": "Visually checked: English title block and technical identifiers, shared unchanged."
+    }
+  ],
+  "excludeGlobs": [
+    "LICENSE*",
+    "LICENSES/*",
+    "firmware/Drivers/*",
+    "**/requirements.txt"
+  ],
+  "sharedEvidence": [
+    "Original photographs and thermograms retain instrument readings and screen annotations; English captions explain them.",
+    "Code, protocols, raw logs, measurements, CAD files and original licenses are shared and unchanged."
+  ]
+}

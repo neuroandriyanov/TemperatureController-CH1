@@ -1,3 +1,5 @@
+**Русский** | [English](README.en.md)
+
 # Стенд · Прошивка STM32
 
 Запуск из корня: `python run.py programmer`. Программа предназначена для STM32F030C8 с 64 КБ Flash через штатный UART ROM bootloader. Собственный Python-клиент протокола AN3155; установщик ST FlashLoader не требуется и не включён.

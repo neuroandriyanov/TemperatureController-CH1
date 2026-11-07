@@ -1,3 +1,7 @@
+**Русский** | [English](README.en.md)
+
+Правила публикации сначала на русском, затем на английском: [перевод и проверка актуальности](docs/TRANSLATION.md).
+
 # TemperatureController-CH1 — температура под наблюдением
 
 Репозиторий: [neuroandriyanov/TemperatureController-CH1](https://github.com/neuroandriyanov/TemperatureController-CH1).

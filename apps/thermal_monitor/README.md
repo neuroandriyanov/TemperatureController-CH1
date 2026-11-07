@@ -1,3 +1,5 @@
+**Русский** | [English](README.en.md)
+
 # Стенд · Видео и тепло
 
 Запуск: `python run.py thermal` из корня. Два независимых источника DirectShow: цветная камера/HDMI-карта и UTi260B. Программа рассчитана на Windows; зависимости перечислены в `requirements.txt`.

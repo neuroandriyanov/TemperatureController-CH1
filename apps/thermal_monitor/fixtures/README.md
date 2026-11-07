@@ -1,3 +1,5 @@
+**Русский** | [English](README.en.md)
+
 # UTi260B OCR fixture
 
 Реальный неизменённый кадр 05.11.2026: min 22,2 °C, max 33,2 °C, center 27,9 °C.

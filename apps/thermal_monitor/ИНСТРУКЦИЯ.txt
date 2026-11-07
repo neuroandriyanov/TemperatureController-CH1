@@ -1,3 +1,5 @@
+English version: ИНСТРУКЦИЯ.en.txt
+
 СТЕНД · ВИДЕО И ТЕПЛО
 Установка из корня: python setup.py. Запуск: python run.py thermal.
 Windows x64, Python 3.12–3.15.

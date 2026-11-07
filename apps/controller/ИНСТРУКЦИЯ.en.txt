@@ -1,0 +1,91 @@
+Russian original: ИНСТРУКЦИЯ.txt
+
+BENCH · CH1 TEMPERATURE CONTROLLER
+Start: python run.py controller from the root. Install: python setup.py.
+
+Communication: Modbus RTU, 38400, 8E1. BOOT0=0, normal application mode.
+The board selects the address: Sa2 × 16 + Sa3. These are hexadecimal switches:
+0/1 = 1, 1/0 = 16, 2/A = 42. Allowed range 1…247; 00 and F8…FF do not work.
+“Найти адрес” (Find address) searches for devices using reads.
+Disconnect the current connection before searching; searching can be stopped.
+
+SETTINGS ARE STORED IN THE TEMPERATURE CONTROLLER
+On connection, the application reads device settings and writes nothing.
+Unsent field edits exist only in the window. “Считать из прибора” (Read from device) replaces them with values read from the device.
+“Сохранить в прибор” (Save to device) performs STOP, writes all parameters, saves EEPROM and verifies by readback.
+This saves thermocouple type, compensation, PID, protection, tolerances, calibration, selected mode and manual power.
+EEPROM is saved on command, not at every poll. AUTO/MANUAL/STOP and new power in MANUAL save automatically. A write error is reported and heating is blocked.
+If another client changed settings, the application refuses to overwrite them with a stale copy: reread the device first.
+The next window launch reads parameters from the device again. A local copy does not replace EEPROM.
+After power-up, the device restores its last active state: AUTO, MANUAL with the specified power, or STOP. This works without the PC application.
+The first upgrade from 2.0/2.1 selects STOP because the previous firmware did not retain the active heating state.
+“Выбор режима” (Mode selection) selects the mode for the next start; “После питания” (After power-up) shows the active state saved by the device.
+Selecting an item alone does not enable heating. Use “ВКЛЮЧИТЬ” (ENABLE); stop with STOP / F8 or “Сохранить в прибор”.
+After power-up, the device waits for sensors to become ready. Calibration/EEPROM errors, faults or waiting over 15 seconds cancel startup and save STOP.
+After a fault or watchdog reset, there is no automatic restart. After correcting the causes, explicitly start again.
+Output temporarily turns off while mode is saved; the application checks EEPROM confirmation. Until confirmed, the write is not complete.
+
+OBSERVATION AND CONTROL
+The plot shows actual temperature, requested setpoint and the working setpoint when slew limiting is enabled.
+Select the time scale above the plot; the wheel zooms, and the cursor displays values.
+“Пауза графика” (Pause plot) stops scrolling, while polling and logging continue.
+Invalid or stale measurements appear as “—” and plot gaps.
+“Применить и запомнить” (Apply and remember) sends setpoint, tolerances and manual power when MANUAL is active. In 2.5, setpoint and tolerances are atomically saved in EEPROM; earlier versions require a separate SAVE.
+To save setpoint and tolerances, click “Сохранить в прибор”. In MANUAL, new power is automatically saved together with the current RAM parameters.
+“ВКЛЮЧИТЬ” checks faults, saves changed configuration and starts the selected AUTO PID or MANUAL mode.
+In MANUAL, power is set first and the mode then enabled. Output limits and all protections remain active.
+STOP / F8 are available on every tab. STOP cancels a pending start command. Closing the window sends STOP only when the saved communication timeout is nonzero; at timeout 0, autonomous operation continues.
+After communication loss, the application does not reconnect with an automatic start. The default device timeout is 5 seconds.
+With communication timeout 0, disconnecting the cable alone does not stop heating.
+During autonomous recovery after power-up, communication timeout becomes active with the first successful PC request.
+K1 is a signal relay with a selectable function, not an emergency contactor.
+
+RELAY AND WARM-UP
+Dedicated “Реле и прогрев” (Relay and warm-up) tab, “Функция реле” (Relay function) list:
+0. Disabled.
+1. Temperature within tolerance: AUTO/MANUAL, no faults, temperature between setpoint minus lower tolerance and setpoint plus upper tolerance.
+2. Within tolerance after warm-up: as item 1, but after a dwell. Default 600 seconds; configurable 0…65535 seconds.
+3. Any active or latched fault.
+4. Overcurrent (threshold and delay on the “PID и защиты” / PID and protections tab).
+5. Heater fault: current below the configured minimum while heating is enabled.
+6. Device / sensor fault: TC, ADC, PT100, communication, address, watchdog/loop, EEPROM, calibration, current during OFF. Excludes separately listed overload, open heater and process temperature limit.
+Alarm functions 3…6 also operate in STOP. Removing the cause does not automatically clear a latched fault.
+Dwell begins on first entry into tolerance after startup. If temperature leaves tolerance, time continues but the relay turns off.
+After dwell, the relay is allowed only while within tolerance. STOP, a fault, or changes to setpoint/tolerances or relay parameters reset warm-up.
+At the next power-up, dwell starts again. Current state and remaining seconds appear below the list.
+Save the selected function and duration with “Сохранить в прибор”.
+For heater diagnostics, set “Минимальный ток при ON” (Minimum ON current) above 0 and set the insufficient-current duration. Time accumulates across valid ON windows from several bursts; OFF does not count. Normal ON current resets the counter. Very short pulses without a full 200 ms RMS window cannot be diagnosed.
+
+CALIBRATION
+B/E/J/K/N/R/S/T thermocouples; internal MAX31856 compensation or external PT100 through 4–20 mA.
+Select the actual thermocouple type and the range configured in the PT100 transmitter.
+The initial −10…150 °C range is not a confirmed range for your transmitter.
+Thermocouple, internal CJ, PT100 and current corrections are available in their respective fields.
+ACS712 30 A measures AC RMS over 200 ms. For zero, ensure actual zero current and STOP, then capture noise.
+For gain, apply known current, enter the reference ammeter reading and calculate the coefficient.
+The application does not enable the load for calibration itself. Coefficients can be entered manually.
+For 4–20 mA calibration, apply reference 4 and 20 mA in sequence and record the corresponding points.
+Check intermediate points and corrections. Only then confirm the relevant channel.
+Changing that channel's coefficients clears its confirmation. Then save parameters in the device.
+Startup is prohibited without confirmed current calibration; external compensation additionally requires PT100 / 4–20 mA verification.
+The device cannot distinguish an incorrectly checked operator confirmation from actual calibration.
+
+FAULTS AND LOGS
+The “Диагностика” (Diagnostics) tab displays active/latched faults, MAX31856, measurement ages, EEPROM and communication counters.
+Remove the active cause, enter STOP and then clear the latched fault. Reset itself does not start heating.
+Polling is automatically logged to captures/*.csv (UTF-8, ; separator); invalid temperature is an empty field.
+“Экспорт CSV” (Export CSV) saves the accumulated plot. “Снимок” (Snapshot) saves the window to captures/*.png.
+Reconnecting starts a new log. History is stored on the PC.
+
+AUTOMATION ACCESS
+app.py --status reads a fresh JSON snapshot of the open window without occupying the selected RS-485 port.
+app.py --snapshot --port PORT --address 1 --output state.json reads the device directly and exits; replace PORT with your selected RS-485 port.
+For --snapshot, the port must be free; both variants only read and do not start heating.
+Open-window snapshot: .runtime/live.json. Check online/received/age_seconds before using readings.
+Client-development entry point: service.py; register map: registers.json.
+Current example from the project root:
+python env.py apps/controller/app.py --status
+The Russian source also retains an older tools\bench_monitor / tools\thermo_stand path example from the previous working-directory layout; use the current package path above.
+
+Version 2.5: period 2–300 s, tolerances 0–1800 °C; tolerances control the relay, not PID accuracy.
+Original code MIT. Dependencies installed separately. Current verification: ../../docs/VALIDATION.en.md.

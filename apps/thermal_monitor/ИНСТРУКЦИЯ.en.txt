@@ -1,0 +1,107 @@
+Russian original: ИНСТРУКЦИЯ.txt
+
+BENCH · VIDEO AND THERMAL MONITORING
+Install from the root: python setup.py. Start: python run.py thermal.
+Windows x64, Python 3.12–3.15.
+
+TWO IMAGES
+Left: color camera / HDMI capture card. Right: thermal imager.
+Device and video-mode lists are below each image.
+Select a device and click “Подключить” (Connect). “Стоп” (Stop) releases the camera.
+“Обновить устройства” (Refresh devices) rereads connected cameras.
+If another application owns the camera, close that application's camera preview.
+After USB disconnection, reconnect the cable, refresh the list and click Connect.
+
+Verified on this bench's hardware:
+  CAM LINK 4K: 3840×2160, YUYV422, 25 input frames/s.
+  UNI-T UTi260B (UVC Camera): 240×321, YUYV422, 15 frames/s.
+To conserve resources, color preview updates up to 10 times per second,
+but saving uses the full 3840×2160 frame.
+
+TEMPERATURE
+On UTi260B, enable USB Camera, a pure thermal image, color scale and center temperature.
+Close the instrument menu. The application's °C/°F units must match the thermal-imager screen.
+
+Click the thermogram to position the crosshair. Drag it while holding the left mouse button.
+Double-click or “Закрепить точку” (Pin point) adds a persistent T1, T2, etc. marker.
+All markers update from the current frame; up to 20 markers can be pinned.
+Below the images are crosshair temperature, instrument scale/center readings and a marker table.
+Markers and alignment persist between launches.
+
+UTi260B sends a colored screen image over USB, not a radiometric array.
+The application recognizes scale/center digits and estimates temperature from the palette.
+Marker values therefore always carry “≈”. Estimates may be wrong with a wide temperature
+range, mixed visible/thermal mode, poor recognition or reflections. Do not treat them as
+precise measurements. Instrument center is displayed separately as a number read from the
+screen; this is also recognition, not a digital sensor channel.
+Temperature may be unavailable behind instrument labels and crosshairs; “нет данных”
+(no data) is then displayed. Stale frames and unreadable scales are not replaced by plausible numbers.
+
+For another thermal imager, select “Другой прибор · только видео” (Other instrument · video only).
+The image will be available, but temperature requires a decoder / SDK for that model.
+
+ALIGNMENT WITH COLOR VIDEO
+Below the thermal window, “Поворот изображения” (Image rotation) offers 0°, 90° clockwise,
+180° and 90° counterclockwise. It also affects snapshots/API and persists between launches.
+Crosshair, marker and alignment coordinates are transformed with the image.
+Scale recognition runs before rotation. After physically moving cameras, check alignment:
+software rotation does not correct a changed viewpoint.
+
+Click “Совместить камеры…” (Align cameras). A separate window overlays the thermogram on
+the color frame. Both frames are frozen; previous saved alignment loads automatically.
+1. Use “Прозрачность тепловизора” (Thermal transparency) to reveal contours in both images.
+2. Drag the thermogram's interior to move it.
+3. Drag round corner handles and square edge handles to stretch it.
+4. The circular center arrow rotates the thermogram. An angle field and ±90° controls are also available.
+   Hold Shift while dragging the arrow for 15° rotation steps.
+5. When shared-object contours align, click “Сохранить” (Save).
+
+“Отменить шаг” (Undo) / Ctrl+Z restores the previous edit. “Вернуть исходное” (Restore initial)
+restores the position from when the window opened; “По центру” (Center) starts from a straight rectangle.
+“Показать целиком” (Show all) brings every handle into view if the layer extends outside the frame.
+“Отмена” (Cancel) closes without changing saved alignment.
+Align shared bench objects, not frame boundaries: the cameras have different fields of view.
+After alignment, the crosshair and pinned markers appear on color video with temperature.
+Clicking color video also moves the crosshair to the corresponding thermal-image location.
+Points outside the second camera's field are not transferred.
+
+Alignment applies to one plane. Protruding bench objects may retain offsets because viewpoints differ.
+Repeat alignment after moving a camera, changing zoom or moving the bench. Selecting a different
+device or video mode automatically clears alignment.
+
+COLOR VIDEO PROCESSING
+“Улучшение” (Enhancement) enables processing. “Блики” (Glare) softens bright regions using a
+tone curve; “Резкость” (Sharpness) applies moderate edge enhancement. Snapshots also use these settings.
+They do not eliminate physical reflections or recover clipped highlights.
+Thermal frames are processed for measurement before marker overlays, independently of color sliders.
+
+SAVING
+“Сохранить 2 снимка” (Save 2 snapshots) or Ctrl+S creates a capture_DATE_TIME directory:
+  color.png         — full color frame with temperature markers;
+  thermal.png       — separate thermogram with the same markers;
+  measurements.json — temperatures, coordinates, settings, alignment and frame times.
+
+There are exactly two images. The thermogram is enlarged 3× with nearest-neighbor sampling for
+label readability; this does not improve thermal-sensor resolution.
+PNG adds no JPEG compression loss. The two frame times are recorded in JSON.
+Cameras have no hardware synchronization: the latest fresh pair is used.
+If frames are over two seconds old, saving a pair is blocked.
+
+Default snapshot location: output\bench_monitor. “Папка снимков” (Snapshot folder) opens it;
+“Изменить папку” (Change folder) selects another. An incomplete write remains in a hidden
+.capture_*.partial directory and is not presented as a successfully saved pair.
+
+APPLICATION CONTROL
+The local HTTP API and command-line client are documented in API.en.txt.
+An assistant can use them to select cameras, change processing, read temperature at a point,
+place markers, retrieve frames and save snapshot pairs.
+The interface is only available on this computer; images are not sent to the internet.
+
+FILES
+settings.json           — settings, markers and alignment.
+.runtime\bench.log      — error log.
+.runtime\api.json       — local API address and temporary key.
+test_core.py            — functional checks.
+THIRD_PARTY.txt         — decoder provenance and licenses.
+
+Do not publish .venv, .runtime or settings.json: they are covered by .gitignore.

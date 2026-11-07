@@ -1,3 +1,5 @@
+English version: ИНСТРУКЦИЯ.en.txt
+
 СТЕНД · ТЕРМОРЕГУЛЯТОР CH1
 Запуск: python run.py controller из корня. Установка: python setup.py.
 

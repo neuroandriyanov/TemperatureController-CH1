@@ -1,3 +1,5 @@
+English version: ИНСТРУКЦИЯ.en.txt
+
 Актуальная инструкция: README.md в этой папке и ../../docs/QUICKSTART.md.
 Запуск из корня: python run.py programmer. Зависимости: python setup.py.
 Файл по умолчанию: firmware/build/controller.bin. Порт выбирается пользователем.

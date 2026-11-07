@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0",
+  "project_id": "temperaturecontroller_ch1",
+  "bundle_format": "local-hashed-sources-1",
+  "sources": [
+    {
+      "id": "hardware",
+      "title": "Hardware mapping",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/docs/HARDWARE.md",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/docs/HARDWARE.md",
+      "sha256": "56cc10abda323f57bfbab769a4e4df30549181a3090d7da570a41949a5d3c452",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "config",
+      "title": "Parameters and defaults",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/app/config.def",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/app/config.def",
+      "sha256": "a3842f7b0be8bbfb084a6b84183589d1e261790cbd49450ed6aa98bbc28781dc",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "protocol",
+      "title": "Modbus RTU",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/docs/PROTOCOL.md",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/docs/PROTOCOL.md",
+      "sha256": "c26f7b36993f888ef50fc73b0dfba36a174aaf527c7bdf0b941a707315121ac5",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "registers",
+      "title": "Register map",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/docs/registers.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/docs/registers.json",
+      "sha256": "1515561b93e7b6f0d130466c0400dc65317167dc94d3eec2307c838787599b35",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "controller",
+      "title": "Control logic",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/app/controller.c",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/app/controller.c",
+      "sha256": "2225298be4c68622eca087ebdd810a7e89690c6f658985909f3ffea894131a46",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "pid",
+      "title": "PID",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/app/pid.c",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/app/pid.c",
+      "sha256": "529bc5bfc1f91965cae3c5a78ebccb92ae134fceb7688569cba210279f273ac2",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "board",
+      "title": "STM32 peripherals",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "firmware/Core/Src/board.c",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/firmware/Core/Src/board.c",
+      "sha256": "08fafa661816216a0d53d3ec51af3cba7542dba8e9516d119f83f90af1ade544",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "tc",
+      "title": "Thermocouples",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-06_thermocouple_input/temperature_points.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-06_thermocouple_input/temperature_points.json",
+      "sha256": "38421cf8a03cec7e35cfe0744b0065d8cfe6cc01cbd0f2cf8a1a228a8fbc62f3",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "loop",
+      "title": "Direct current input",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-06_pt100_npt_loop/loop_calibration_validation.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-06_pt100_npt_loop/loop_calibration_validation.json",
+      "sha256": "5182f7bbc2085e65dbfd3ff244e93b0f956ecf46148f80d6e3133f53207c0a89",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "pt100",
+      "title": "Pt100 and NPT transmitter",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-06_pt100_npt_loop/npt_chain_result.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-06_pt100_npt_loop/npt_chain_result.json",
+      "sha256": "8f9ded001f81ee1e447bf6907b26cbf833f898507f12a076e9815c72b2304823",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "pid_result",
+      "title": "Two PID experiments",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-07_heater_60c/raw/pid_analysis.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-07_heater_60c/raw/pid_analysis.json",
+      "sha256": "30cbd877462d8b5cae0cb11de328bf010835337eaa2eb9d0aa7396225a1bdb86",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "current",
+      "title": "ACS712 calibration",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-07_heater_60c/raw/current_two_point_saved.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-07_heater_60c/raw/current_two_point_saved.json",
+      "sha256": "8943160e1ab8c922c39bda3958e021e190ae763a25b0bc2b5ee248ef473f23da",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "thermal",
+      "title": "Separate thermogram analysis",
+      "kind": "measurement_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "measurements/2026-11-07_heater_60c/raw/reviewed_thermal_estimates.json",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/measurements/2026-11-07_heater_60c/raw/reviewed_thermal_estimates.json",
+      "sha256": "e8af07cc20427e20362c18c588f0a0aa8fcfc082dd2b369f53caa9202dc272b2",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "hardware_inventory",
+      "title": "Hardware material inventory and differences",
+      "kind": "other",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/README.md",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/README.md",
+      "sha256": "8046a9cf99ab417f094751df086995cbd3b74aec3f368e6e2e13dd4172ee033a",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "cpu_pdf",
+      "title": "Control schematic, 6 sheets",
+      "kind": "schematic",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/boards/схема_управления.pdf",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/boards/%D1%81%D1%85%D0%B5%D0%BC%D0%B0_%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F.pdf",
+      "sha256": "b6584bd963781e037e70aec116110db2e1ec635c1d93650f6911d60ae4405fa1",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "power_pdf",
+      "title": "Power schematic",
+      "kind": "schematic",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/boards/схема_тиристор.pdf",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/boards/%D1%81%D1%85%D0%B5%D0%BC%D0%B0_%D1%82%D0%B8%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%80.pdf",
+      "sha256": "4c3381b565356c32916293abeef7fb28d297b175e7f78261285a8699266a5540",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "cpu_bom",
+      "title": "CPU board BOM",
+      "kind": "bom",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/boards/bom_ssr_cpu_v2_3.xlsx",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/boards/bom_ssr_cpu_v2_3.xlsx",
+      "sha256": "c40c746739956206cbed8202c183e86a9cd9c9e7d73e635fcfe345df1cf5607b",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "power_bom",
+      "title": "Power board BOM",
+      "kind": "bom",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/boards/Specification_SSR_P_V01.xlsx",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/boards/Specification_SSR_P_V01.xlsx",
+      "sha256": "7e7e95df8f642c3aebc585649231e66cb6c89aba6cd1cd0038ad9514d30d7d66",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "case",
+      "title": "Enclosure part",
+      "kind": "design_file",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "hardware/enclosure/cap_termoreg v9.stl",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/hardware/enclosure/cap_termoreg%20v9.stl",
+      "sha256": "2f16edf18a17e6bec1e63867399de6e17db988afa80fd5490eeb94441ee590c7",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    },
+    {
+      "id": "validation",
+      "title": "Publication bundle validation",
+      "kind": "build_report",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "4681795474f7dab075687ae774e2b3d371df7a2b",
+      "path": "docs/VALIDATION.md",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/4681795474f7dab075687ae774e2b3d371df7a2b/docs/VALIDATION.md",
+      "sha256": "16ffd17078e5c79d22e3531cfd8bfddb04f3baa6ab61fcdaddcc915890586478",
+      "accessed_at": "2026-11-07",
+      "notes": "The report was supplemented with GitHub Actions links and Git checkout verification results. Measurements and algorithms were unchanged."
+    },
+    {
+      "id": "open",
+      "title": "Open questions",
+      "kind": "author_note",
+      "repository": "neuroandriyanov/TemperatureController-CH1",
+      "commit": "0d47c0395ef22413508e498cc08f9e8415b8acfc",
+      "path": "knowledge/OPEN_QUESTIONS.md",
+      "url": "https://github.com/neuroandriyanov/TemperatureController-CH1/blob/0d47c0395ef22413508e498cc08f9e8415b8acfc/knowledge/OPEN_QUESTIONS.md",
+      "sha256": "1d8505e5060abce88fe254add6a57c3826af11b8f1080e1037622fb5be57dbd3",
+      "accessed_at": "2026-11-07",
+      "notes": "Verified source version in the original publication commit; the local copy is checked with SHA-256."
+    }
+  ],
+  "hardware_versions": [
+    {
+      "id": "cpu_v2_3",
+      "label": "CPU ssr_cpu_v2_3",
+      "board_revision": "ssr_cpu_v2_3",
+      "firmware_revision": "2.5.0",
+      "status": "document_confirmed",
+      "evidence": [
+        {
+          "source_id": "hardware_inventory",
+          "locator": "boards/ssr_cpu_v2_3"
+        }
+      ],
+      "notes": "Revision according to production files, not independent identification of each board."
+    },
+    {
+      "id": "bench_r47",
+      "label": "Tested specimen with R17 at 47 kohm",
+      "board_revision": "ssr_cpu_v2_3, modified",
+      "firmware_revision": "2.5.0",
+      "status": "document_confirmed",
+      "evidence": [
+        {
+          "source_id": "hardware",
+          "locator": "47 кОм"
+        }
+      ],
+      "notes": "The modification is described by the operator and in the log; the original schematic was not updated."
+    }
+  ],
+  "components": [
+    {
+      "id": "R17_original",
+      "hardware_version_id": "cpu_v2_3",
+      "reference_designator": "R17",
+      "property": "resistance",
+      "value": 62,
+      "unit": "kohm",
+      "status": "document_confirmed",
+      "evidence": [
+        {
+          "source_id": "hardware",
+          "locator": "62 кОм"
+        }
+      ]
+    },
+    {
+      "id": "R17_bench",
+      "hardware_version_id": "bench_r47",
+      "reference_designator": "R17",
+      "property": "resistance",
+      "value": 47,
+      "unit": "kohm",
+      "status": "document_confirmed",
+      "evidence": [
+        {
+          "source_id": "hardware",
+          "locator": "47 кОм"
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "facts": "knowledge/facts.en.json"
+}

@@ -1,0 +1,5 @@
+Russian original: THIRD_PARTY.txt
+
+Original code: MIT (../../LICENSE).
+pyserial 3.5 — BSD: https://github.com/pyserial/pyserial/blob/v3.5/LICENSE.txt
+PySide6/Qt are installed separately; their licenses and notices are retained in the packages. See ../../NOTICE.en.md.

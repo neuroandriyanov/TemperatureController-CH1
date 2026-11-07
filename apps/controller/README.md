@@ -1,3 +1,5 @@
+**Русский** | [English](README.en.md)
+
 # Стенд · Терморегулятор CH1
 
 Запуск из корня: `python run.py controller`. Собственное окружение также возможно: `pip install -r requirements.txt`, затем `python app.py` в этой папке.

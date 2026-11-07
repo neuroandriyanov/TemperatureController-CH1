@@ -1,0 +1,5 @@
+Russian original: ИНСТРУКЦИЯ.txt
+
+Current instructions: README.en.md in this directory and ../../docs/QUICKSTART.en.md.
+Start from the project root: python run.py programmer. Dependencies: python setup.py.
+Default file: firmware/build/controller.bin. The user selects the port.
